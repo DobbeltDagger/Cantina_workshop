@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CANTINA">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <title>CANTINA</title>
+  <!-- <link href="/assets/css/style.min.css" rel="stylesheet" /> -->
+  <link href="/assets/css/normalize.css" rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="pageWrapper">
+
+    <section id="mainLeft">
+      <header class='headerWrapper'>
+  <div id='burgerMenuWrapper'>
+    <div id='logoWrapper'>
+      <a href="/">CANTINA</a>
+    </div>
+    <div id='btnWrapper'>
+      <a id='burger'>
+        <div id='burgerIcon'>
+          <svg id='burgerSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+            <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
+          </svg>
+        </div>
+        <div id='crossIcon' class='hide'>
+          <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+            <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="menuList" class='hide'>
+    <ul class="mobileNav"><li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
+<li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+  </div>
+
+</header>
+      
+
+  <div class='upcomingWrapper'>
+    
+  </div>
+  <!-- eleventyNavigation:
+  key: 'Frontpage'
+  title: 'Frontpage'
+  order: 1 -->
+
+<img src='assets/images/Cabbage_Smaller.jpg'/>
+<b>Processing Community Day 2021, workshop #5<br/>Saturday, March 13th from 12.00</b><br/>
+<p>The topic of the workshop is the implementation of a custom podcast player on the PCD website. We're focusing on software and build tools, but we will also continue to discuss our general approach(es) to podcasting in relation to PCD 2021.</p>
+
+
+    </section>
+
+    <section id="mainRight">
+      
+
+  <div class='headerWrapper'>
+  <h2>Previous</h2>
+</div>
+
+  <!-- <h2>previous</h2> -->
+  <div class='workshopWrapper'>
+    
+  </div>
+
+
+    </section>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      // console.log("All is loaded");
+
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('burgerIcon').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      resize();
+      window.onresize = resize;
+    })
+  </script>
+</body>
+

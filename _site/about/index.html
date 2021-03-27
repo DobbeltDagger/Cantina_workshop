@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CANTINA">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <title>CANTINA</title>
+  <!-- <link href="/assets/css/style.min.css" rel="stylesheet" /> -->
+  <link href="/assets/css/normalize.css" rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="pageWrapper">
+
+    <section id="mainLeft">
+      <header class='headerWrapper'>
+  <div id='burgerMenuWrapper'>
+    <div id='logoWrapper'>
+      <a href="/">CANTINA</a>
+    </div>
+    <div id='btnWrapper'>
+      <a id='burger'>
+        <div id='burgerIcon'>
+          <svg id='burgerSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+            <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
+          </svg>
+        </div>
+        <div id='crossIcon' class='hide'>
+          <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+            <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="menuList" class='hide'>
+    <ul class="mobileNav"><li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
+<li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
+<li class="listItem active"><a href="/about/" class="anchor activeAnchor">About</a></li></ul>
+  </div>
+
+</header>
+      
+
+  <h2>about&nbsp;</h2>
+  <p>CANTINA er et udstillingssted ....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies auctor aliquet. Aenean at lorem scelerisque, consequat nunc et, pulvinar turpis. Aenean gravida tempor diam, eget congue nunc. Donec purus dui, efficitur id metus non, facilisis tincidunt ipsum. Phasellus porta, quam sed fringilla fringilla, quam augue varius libero, nec eleifend mi tortor in enim. Integer varius justo magna, in auctor ex iaculis vel. Ut sed nisl eu eros egestas imperdiet eget id dui. Sed turpis sapien, fermentum ut massa aliquam, faucibus commodo erat. Etiam sit amet ligula at arcu lobortis molestie in sed ante.</p>
+  <p>Sed accumsan metus eget erat molestie dapibus. Cras enim orci, condimentum eget tortor et, lobortis imperdiet arcu. Aliquam mollis volutpat eros nec pellentesque. Integer vel orci sit amet urna elementum molestie in vel justo. Nam at metus turpis. Mauris rutrum ornare arcu, non sagittis turpis malesuada a. Suspendisse at enim ornare, maximus sem nec, lacinia risus. Nulla dignissim urna in auctor interdum. Suspendisse molestie tortor faucibus commodo rhoncus.</p>
+  
+  <p>If you're interested in participating, find us here:<br/>Facebook: <a href="https://www.facebook.com/codeAndShareAarhus" target="_blank">@CodeAndShareAarhus</a>
+    <br>Mail: <a href="mailto:rwx@siusoon.net">rwx@siusoon.net</a> or <a href="mailto:andersvisti@gmail.com">andersvisti@gmail.com</a><br/>Address: Høegh Guldbergs Gade 65B, DK-8000C</p>
+  <p><a href="https://github.com/codeAndShareAarhus" target="_blank">https://github.com/codeAndShareAarhus</a></p>
+
+
+    </section>
+
+    <section id="mainRight">
+      
+
+  <iframe id="mapSource" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=10.204769968986513%2C56.161803161462714%2C10.21185100078583%2C56.16453334089186&amp;layer=mapnik&amp;marker=56.1631682754352%2C10.20831048488617" style="border: 0px solid black"></iframe>
+
+
+    </section>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      // console.log("All is loaded");
+
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('burgerIcon').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      resize();
+      window.onresize = resize;
+    })
+  </script>
+</body>
+

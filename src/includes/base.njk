@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CANTINA">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <title>CANTINA</title>
+  <!-- <link href="/assets/css/style.min.css" rel="stylesheet" /> -->
+  <link href="/assets/css/normalize.css" rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="pageWrapper">
+
+    <section id="mainLeft">
+      {% include "menu.html" %}
+      {% block leftContent %}{{ content | safe }}{% endblock leftContent %}
+    </section>
+
+    <section id="mainRight">
+      {% block rightContent %}{% endblock rightContent %}
+    </section>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      // console.log("All is loaded");
+
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('burgerIcon').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      resize();
+      window.onresize = resize;
+    })
+  </script>
+</body>
+
