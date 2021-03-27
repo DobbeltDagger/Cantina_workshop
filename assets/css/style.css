@@ -107,6 +107,117 @@ body {
 
 
 
+/* HEADER ************************************* */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.headerWrapper {
+  display: block;
+}
+
+header #logo h1 {
+  margin-bottom: 0px;
+}
+header #burgerMenuWrapper {
+  display: flex;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* left side of header */
+header #burgerMenuWrapper #logoWrapper {
+  flex: 0 0 66.6666%;
+}
+header #burgerMenuWrapper #logoWrapper h1 {
+  margin-bottom: 0px;
+  display: inline-block;
+}
+/* right side of header */
+header #burgerMenuWrapper #btnWrapper {
+  flex: 0 0 33.3333%;
+  text-align: right;
+}
+/* color for all header links */
+header #burgerMenuWrapper a {
+  color: #152255;
+  text-decoration: none;
+}
+header #burgerMenuWrapper a#burger {
+  color: #152255;
+  text-decoration: none;
+  display: block;
+  float: right;
+  margin-top: -0.6125rem;
+  margin-right: -0.325rem;
+}
+header #burgerMenuWrapper a#burger #burgerIcon,
+header #burgerMenuWrapper a#burger #crossIcon {
+  float: right;
+}
+header #burgerMenuWrapper a#burger #burgerIcon svg,
+header #burgerMenuWrapper a#burger #crossIcon svg {
+  display: block;
+  float: right;
+}
+
+
+/* hide for icons */
+#crossIcon.hide,
+#burgerIcon.hide {
+  display: none;
+}
+
+header #logo #wide h1,
+header #logo #narrow h1 {
+  display: inline-block;
+}
+header #menuList {
+  flex: 0 0 100%;
+  margin-bottom: 1em;
+  max-height: 200px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+header #menuList.hide {
+  max-height: 0px;
+  margin-bottom: 0px;
+}
+header #menuList ul {
+  list-style-type: none;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 0px; padding: 0px;
+  border-bottom: 1px solid rgba(21,34,85, 0.35);
+}
+header #menuList ul li {
+  display: block;
+  float: left;
+  width: 100%;
+  border-top: 1px solid rgba(21,34,85, 0.35);
+  margin: 0px;
+  padding: 0px;
+}
+header #menuList ul li a {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0px 1em;
+  line-height: 2em;
+  text-align: center;
+  color: #152255;
+}
+
+header #menuList ul li a.activeAnchor {
+  text-decoration: line-through;
+}
+
+
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
