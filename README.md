@@ -2,16 +2,20 @@
 
 ### 14.-15. April 2021
 
-<br/>
-Workshoppens formål er at designe og kode et nyt website for udstillingsstedet Cantina sammen. Workshoppen introducerer en tilgængelig kodebase, der giver deltagerne adgang til at administrere indhold på Cantinas site -og giver dem samtidig tilstrækkelig kode-kendskab til, at de selv kan oprette, designe og redigere websites -eventuelt til eget brug.
+_  
+Workshoppens formål er at designe og kode et nyt website for udstillingsstedet Cantina - sammen. Workshoppen præsenterer en enkel kodebase, der giver deltagerne adgang til at administrere indhold på Cantinas site -og giver dem samtidig tilstrækkelig kode-kendskab til, at de selv kan oprette, designe og redigere websites -eksempelvis til eget brug.
 
-Præsentation af teknologi og frameworks: 
+Denne side er workshoppens videns- og kodebase. Siden opdateres løbende med indhold, der kan hjælpe deltagerne i arbejdet.
+
+***Det er vigtigt at nævne, at ressourcen her ikke er lektier! ;-) .. Workshoppen gennemgår nedenstående teknologier på workshoppens første dag.*** ... Vi starter med at introducere de nødvendige teknologier &mdash; i en slags "set it and forget it"-mode &mdash; og koncentrerer os efterfølgende om sitedesign og visualitet. Hvis man gerne selv vil studere teknologierne, giver denne ressource mulighed for det.
+
+Intro. Præsentation af teknologi og frameworks: 
 1. Static Site Generators 
 2. Eleventy
 3. Node.js
 4. Markdown
 5. Visual Studio Code
-
+<br/><br/>
 
 ---
 
@@ -24,13 +28,15 @@ Først - Hvad er en ***static site generator***?... Hjemmesider kan generelt opd
 Modsat er dynamiske websteder i en næsten konstant forandringstilstand og drives typisk af et CMS. CMS bygger bogstaveligt talt hver side efter behov hver gang en bruger klikker på den. Udviklere opretter indhold, der er gemt i en back-end-database. Når en bruger anmoder om en URL, henter det CMS-drevne websted det relevante indhold fra databasen, indlæser en HTML-skabelon, gengiver indholdet i skabelonen og returnerer en formateret HTML-side til den besøgendes browser - en proces kendt som *server-side processing*.
 
 Læs (engelsk): https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/
+
+Video-intro: https://www.youtube.com/watch?v=3INXQ_4W42g
 <br/><br/>
 
 ---
 
 **2)**
 
-**Eleventy**
+**Eleventy (11ty)**
 
 Eleventy (eller 11ty) er en Node.js-baseret static site generator (SSG). SSG'er renderer et sæt statiske HTML-, CSS- og JavaScript-filer, der derefter uploades til nettet. Sitet er derfor mindre afhængigt af server-teknologier.
 
@@ -46,19 +52,42 @@ _ Performance er optimal, da alt er renderet på forhånd.
 
 **3)**
 
-Node.js
+**Node.js**
+
+Node.js er en server-side-splatform bygget på Google Chrome's JavaScript Engine (V8 Engine). Node.js blev udviklet af Ryan Dahl i 2009.
+
+Node.js er en open source-platform, og et runtime-miljø til udvikling af serversiden og netværksapplikationer. Node.js-applikationer er skrevet i JavaScript og kan køres inden for Node.js-runtime på OS X, Microsoft Windows og Linux.
+
+Node.js tilbyder også et rigt bibliotek med forskellige JavaScript-moduler, som forenkler udviklingen af webapplikationer ved hjælp af Node.js i høj grad.
+
+Intro til node.js (video, Dan Shiffman): https://www.youtube.com/watch?v=RF5_MPSNAtU
+<br/><br/> 
 
 ---
 
 **4)**
 
-Markdown
+**Markdown**
+
+Markdown er et let *markup-sprog*, som du kan bruge til at tilføje formatering til almindelige tekstdokumenter. Markdown blev oprettet af John Gruber i 2004 og er nu et af verdens mest populære markup-sprog.
+
+Brug af Markdown er anderledes end at bruge en WYSIWYG-editor. I et program som Microsoft Word klikker du på knapper for at formatere ord og sætninger, og ændringerne er synlige med det samme. Markdown er anderledes: Når du opretter en Markdown-formateret fil, tilføjer du Markdown-syntaks til teksten for at angive, hvilke ord og sætninger der skal se anderledes ud.
+
+Link til intro: https://www.markdownguide.org/
+
+video intro: https://www.youtube.com/watch?v=f49LJV1i-_w&t=197s
+<br/><br/>
 
 ---
 
 **5)**
 
-Visual Studio Code
+**Visual Studio Code**
+
+Visual Studio Code er en freeware kode-editor lavet af Microsoft til Windows, Linux og macOS. Funktionerne inkluderer understøttelse af fejlretning, syntaksfremhævning, intelligent kodefærdiggørelse, uddrag, kodeomdannelse og integreret Git. Brugere kan ændre temaet, tastaturgenveje, præferencer og installere udvidelser, der tilføjer yderligere funktionalitet.
+
+Intro (video, engelsk): https://www.youtube.com/watch?v=S320N3sxinE
+<br/><br/>
 
 ---
 
