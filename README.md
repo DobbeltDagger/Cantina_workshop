@@ -3,13 +3,14 @@
 ### 14.-15. April 2021
 
 _  
-Workshoppens formål er at designe og kode et nyt website for udstillingsstedet Cantina - sammen. Workshoppen præsenterer en enkel kodebase, der giver deltagerne adgang til at administrere indhold på Cantinas site -og giver dem samtidig tilstrækkelig kode-kendskab til, at de selv kan oprette, designe og redigere websites -eksempelvis til eget brug.
+Workshoppens fokus er design og kodning af et nyt website for Cantina. Workshoppen præsenterer en enkel kodebase, der giver deltagerne adgang til at administrere indhold på Cantinas kommende website -og giver dem samtidig tilstrækkelig kode-kendskab til, at de selv kan oprette, designe og redigere websites -eksempelvis til eget brug.
 
-Denne side er workshoppens videns- og kodebase. Siden opdateres løbende med indhold, der kan hjælpe deltagerne i arbejdet.
+Denne side er workshoppens videns- og kodebase. Siden opdateres løbende med indhold, der kan hjælpe deltagerne i arbejdet. websites kode kan også downloades herfra, når workshoppen begynder.
 
-***Det er vigtigt at nævne, at ressourcen her ikke er lektier! ;-) .. Workshoppen gennemgår nedenstående teknologier på workshoppens første dag.*** ... Vi starter med at introducere de nødvendige teknologier &mdash; i en slags "set it and forget it"-mode &mdash; og koncentrerer os efterfølgende om sitedesign og visualitet. Hvis man gerne selv vil studere teknologierne, giver denne ressource mulighed for det.
+***Det er vigtigt at nævne, at ressourcen her ikke er lektier! ;-) .. Workshoppen gennemgår nedenstående teknologier på workshoppens første dag, da det er vigtigt at gennemgå sammen*** ... D. 14. April starter jeg (Anders) med at introducere de nødvendige teknologier &mdash; i en slags "set-it-and-forget-it"-mode &mdash; og derefter koncentrerer vi os om design og indhold. Hvis man gerne selv vil studere teknologierne inden workshoppen, giver denne ressource mulighed for det.  
+*
 
-Intro. Præsentation af teknologi og frameworks: 
+**Intro. Præsentation af teknologi og frameworks:** 
 1. Static Site Generators 
 2. Eleventy
 3. Node.js
@@ -56,7 +57,7 @@ _ Performance er optimal, da alt er renderet på forhånd.
 
 Node.js er en server-side-splatform bygget på Google Chrome's JavaScript Engine (V8 Engine). Node.js blev udviklet af Ryan Dahl i 2009.
 
-Node.js er en open source-platform, og et runtime-miljø til udvikling af serversiden og netværksapplikationer. Node.js-applikationer er skrevet i JavaScript og kan køres inden for Node.js-runtime på OS X, Microsoft Windows og Linux.
+Node.js er en open source-platform, og et runtime-miljø til udvikling af servere og netværksapplikationer. Node.js-applikationer er skrevet i JavaScript og kan køres inden for Node.js-runtime på OS X, Microsoft Windows og Linux.
 
 Node.js tilbyder også et rigt bibliotek med forskellige JavaScript-moduler, som forenkler udviklingen af webapplikationer ved hjælp af Node.js i høj grad.
 
