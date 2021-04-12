@@ -14,19 +14,28 @@
 <body>
   <div class="pageWrapper">
 
-    {% include "menu.html" %}
-    {% block mainContent %}{{ content | safe }}{% endblock mainContent %}
+    <section id="mainLeft">
+      {% include "menu.html" %}
+      {% block leftContent %}{{ content | safe }}{% endblock leftContent %}
+    </section>
+
+    <section id="mainRight">
+      {% block rightContent %}{% endblock rightContent %}
+    </section>
 
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
   <script>
+
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
+      // console.log("All is loaded");
 
       let burgerBtn = document.getElementById('burger');
       burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
         document.getElementById('menuList').classList.toggle('hide');
         document.getElementById('burgerIcon').classList.toggle('hide');
         document.getElementById('crossIcon').classList.toggle('hide');

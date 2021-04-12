@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+
+  <div class='backToArrow'><a href='/udstillinger'>&larr; tilbage</a></div>
+
+  <h2>{{ title }}</h2>
+  {{ content | safe }}
+
+
+{% endblock mainContent %}

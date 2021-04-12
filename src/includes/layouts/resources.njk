@@ -1,6 +1,6 @@
 {% extends "base.njk" %}
 
-{% block leftContent %}
+{% block mainContent %}
 
   <h2>Resources</h2>
   <p>A list of resources that are being used, or referenced, frequently in the code&share workshops. Links open in new windows</p>
@@ -17,28 +17,4 @@
     {% endfor %}
   </div>
 
-{% endblock leftContent %}
-
-
-<!-- right content -->
-{% block rightContent %}
-
-  <div class='headerWrapper'>
-    <div class='rightHeader'>
-      <h2>Additional Resources</h2>
-    </div>
-  </div>
-  
-  <div class='addResourceWrapper'>
-    {% for rs in collections.addResourceCollection %}
-      <div class='addRs'>
-        <div class='number'>{{ rs.data.number }}</div>
-        <div class='info'>
-          <a href="{{ rs.data.url }}" target="_blank">{{ rs.data.urlTitle }}</a>&nbsp;
-          {{ rs.data.name }} {{ rs.data.description }} 
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-
-{% endblock rightContent %}
+{% endblock mainContent %}

@@ -2,8 +2,8 @@
 
 
 :root {
-  --main-text-color: tomato;
-  --main-bg-color: whitesmoke;
+  --main-text-color: #000000; /* brown; */
+  --main-bg-color: #e0ff40; /* whitesmoke; */
 }
 
 
@@ -76,12 +76,38 @@ body {
   background: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
-  font-size: 21px;
+  font-size: 21px; /* 21px; */
   line-height: 1.375em;
   margin: 0px;
   padding: 0em;
   height: 100%;
   overflow-x: hidden;
+}
+
+/* ********************************************** */
+/* Typo */
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px 0px 1.5rem 0px;
+  line-height: 1.05em;
+  font-family: 'menuettoregular';
+  letter-spacing: 0.05em;
+}
+
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0px 0px 1rem 0px;
 }
 
 
@@ -99,10 +125,18 @@ body {
 
 }
 #logoWrapper a {
-  font-size: 2em;
-  text-decoration: none;
-  /* background-color: pink; */
+  display: block;
+  float: left;
+  text-indent: -999em;
   font-weight: 700;
+  max-width: 120px; /* 200px; */
+}
+/* image inside a tag */
+#logoWrapper a img {
+  display: block;
+  /* float: left; */ /* dont, ff makes logo disappear! */
+  width: 100%;
+  height: auto;
 }
 
 
@@ -116,6 +150,7 @@ header {
 }
 .headerWrapper {
   display: block;
+  margin-bottom: 2rem;
 }
 
 header #logo h1 {
@@ -144,11 +179,11 @@ header #burgerMenuWrapper #btnWrapper {
 }
 /* color for all header links */
 header #burgerMenuWrapper a {
-  color: #152255;
+  color: var(--main-text-color); /* #152255; */
   text-decoration: none;
 }
 header #burgerMenuWrapper a#burger {
-  color: #152255;
+  color: var(--main-text-color); /* #152255; */
   text-decoration: none;
   display: block;
   float: right;
@@ -193,13 +228,13 @@ header #menuList ul {
   float: left;
   width: 100%;
   margin: 0px; padding: 0px;
-  border-bottom: 1px solid rgba(21,34,85, 0.35);
+  border-bottom: 1px solid rgba(0,0,0, 0.25);
 }
 header #menuList ul li {
   display: block;
   float: left;
   width: 100%;
-  border-top: 1px solid rgba(21,34,85, 0.35);
+  border-top: 0px; /*  1px solid rgba(21,34,85, 0.35); */
   margin: 0px;
   padding: 0px;
 }
@@ -207,10 +242,11 @@ header #menuList ul li a {
   display: block;
   float: left;
   width: 100%;
-  padding: 0px 1em;
-  line-height: 2em;
-  text-align: center;
-  color: #152255;
+  padding: 0.5rem 0px;
+  line-height: 1.1em; /* 2em; */
+  text-align: right; /* center; */
+  color: var(--main-text-color); /* #152255; */
+  text-decoration: none;
 }
 
 header #menuList ul li a.activeAnchor {
@@ -218,11 +254,127 @@ header #menuList ul li a.activeAnchor {
 }
 
 
+
+/* UdstillingerWrapper */
+
+.udstillingerWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px -0.75rem 0px -0.75rem;
+}
+
+.udstillingerWrapper .udst {
+  /* flex: 0 0 25%; */ /* media queries */
+  padding: 0px 0.75rem 1.25rem 0.75rem;
+  overflow: hidden;
+}
+/* img */
+.udstillingerWrapper .udst .img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.udstillingerWrapper .udst .img a {
+  display: block;
+  width: 100%;
+}
+.udstillingerWrapper .udst .img a img {
+  display: block;
+  width: 100%;
+}
+/* info */
+.udstillingerWrapper .udst .info {
+  font-size: 16px;
+  line-height: 21px;
+}
+.udstillingerWrapper .udst .info .title {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+}
+
+
+.backToArrow {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+
+/* ***************************************************************************************************************** */
+/* ***************************************************************************************************************** */
+/* ***************************************************************************************************************** */
+/* ***************************************************************************************************************** */
+/* MEDIA QUERIES */
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen {
+
+  /* udstillinger _*/
+  .udstillingerWrapper .udst {
+    flex: 0 0 100%;
+  }
+
+}
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 500px) {
+
+  /* udstillinger _*/
+  .udstillingerWrapper .udst {
+    flex: 0 0 50%;
+  }
+
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 800px) {
+
+  /* udstillinger _*/
+  .udstillingerWrapper .udst {
+    flex: 0 0 33.3333%;
+  }
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 1024px) {
+
+  /* udstillinger _*/
+  .udstillingerWrapper .udst {
+    flex: 0 0 25%;
+  }
+
+
+}
+
+
+
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
+
+
+@font-face {
+  font-family: 'menuettoregular';
+  font-weight: normal;
+  font-style: normal;  
+  src: url('../fonts/menuetto-webfont.woff2') format('woff2'),
+       url('../fonts/menuetto-webfont.woff') format('woff');
+}
+
 
 
 /* roboto-100 - latin */

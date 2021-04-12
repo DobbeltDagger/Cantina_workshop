@@ -5,9 +5,8 @@
   <meta name="description" content="CANTINA">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
-  <!-- <link href="/assets/css/style.min.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
@@ -15,11 +14,10 @@
 <body>
   <div class="pageWrapper">
 
-    <section id="mainLeft">
-      <header class='headerWrapper'>
+    <header class='headerWrapper'>
   <div id='burgerMenuWrapper'>
     <div id='logoWrapper'>
-      <a href="/">CANTINA</a>
+      <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
     </div>
     <div id='btnWrapper'>
       <a id='burger'>
@@ -40,44 +38,33 @@
   <div id="menuList" class='hide'>
     <ul class="mobileNav"><li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
 <li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
-<li class="listItem active"><a href="/about/" class="anchor activeAnchor">About</a></li></ul>
+<li class="listItem active"><a href="/about/" class="anchor activeAnchor">About</a></li>
+<li class="listItem"><a href="/udstillinger/" class="anchor">Udstillinger</a></li></ul>
   </div>
 
 </header>
-      
+    
 
   <h2>about&nbsp;</h2>
   <p>CANTINA er et udstillingssted ....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies auctor aliquet. Aenean at lorem scelerisque, consequat nunc et, pulvinar turpis. Aenean gravida tempor diam, eget congue nunc. Donec purus dui, efficitur id metus non, facilisis tincidunt ipsum. Phasellus porta, quam sed fringilla fringilla, quam augue varius libero, nec eleifend mi tortor in enim. Integer varius justo magna, in auctor ex iaculis vel. Ut sed nisl eu eros egestas imperdiet eget id dui. Sed turpis sapien, fermentum ut massa aliquam, faucibus commodo erat. Etiam sit amet ligula at arcu lobortis molestie in sed ante.</p>
+
   <p>Sed accumsan metus eget erat molestie dapibus. Cras enim orci, condimentum eget tortor et, lobortis imperdiet arcu. Aliquam mollis volutpat eros nec pellentesque. Integer vel orci sit amet urna elementum molestie in vel justo. Nam at metus turpis. Mauris rutrum ornare arcu, non sagittis turpis malesuada a. Suspendisse at enim ornare, maximus sem nec, lacinia risus. Nulla dignissim urna in auctor interdum. Suspendisse molestie tortor faucibus commodo rhoncus.</p>
-  
-  <p>If you're interested in participating, find us here:<br/>Facebook: <a href="https://www.facebook.com/codeAndShareAarhus" target="_blank">@CodeAndShareAarhus</a>
-    <br>Mail: <a href="mailto:rwx@siusoon.net">rwx@siusoon.net</a> or <a href="mailto:andersvisti@gmail.com">andersvisti@gmail.com</a><br/>Address: Høegh Guldbergs Gade 65B, DK-8000C</p>
-  <p><a href="https://github.com/codeAndShareAarhus" target="_blank">https://github.com/codeAndShareAarhus</a></p>
+
+  <p>FB: <a href='https://www.facebook.com/cancancantina' target='_blank'>https://www.facebook.com/cancancantina</a><br/>
+  Insta: <a href='https://www.instagram.com/cancancantina/' target='_blank'>https://www.instagram.com/cancancantina/</a><br/>
 
 
-    </section>
-
-    <section id="mainRight">
-      
-
-  <iframe id="mapSource" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=10.204769968986513%2C56.161803161462714%2C10.21185100078583%2C56.16453334089186&amp;layer=mapnik&amp;marker=56.1631682754352%2C10.20831048488617" style="border: 0px solid black"></iframe>
-
-
-    </section>
 
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
   <script>
-
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
-      // console.log("All is loaded");
 
       let burgerBtn = document.getElementById('burger');
       burgerBtn.addEventListener('click', function() {
-        console.log("button was clicked");
         document.getElementById('menuList').classList.toggle('hide');
         document.getElementById('burgerIcon').classList.toggle('hide');
         document.getElementById('crossIcon').classList.toggle('hide');

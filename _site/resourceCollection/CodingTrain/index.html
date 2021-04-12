@@ -5,9 +5,8 @@
   <meta name="description" content="CANTINA">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
-  <!-- <link href="/assets/css/style.min.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
@@ -15,11 +14,10 @@
 <body>
   <div class="pageWrapper">
 
-    <section id="mainLeft">
-      <header class='headerWrapper'>
+    <header class='headerWrapper'>
   <div id='burgerMenuWrapper'>
     <div id='logoWrapper'>
-      <a href="/">CANTINA</a>
+      <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
     </div>
     <div id='btnWrapper'>
       <a id='burger'>
@@ -40,11 +38,12 @@
   <div id="menuList" class='hide'>
     <ul class="mobileNav"><li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
 <li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
-<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li>
+<li class="listItem"><a href="/udstillinger/" class="anchor">Udstillinger</a></li></ul>
   </div>
 
 </header>
-      
+    
 
   <h2>Resources</h2>
   <p>A list of resources that are being used, or referenced, frequently in the code&share workshops. Links open in new windows</p>
@@ -98,37 +97,17 @@
   </div>
 
 
-    </section>
-
-    <section id="mainRight">
-      
-
-  <div class='headerWrapper'>
-    <div class='rightHeader'>
-      <h2>Additional Resources</h2>
-    </div>
-  </div>
-  
-  <div class='addResourceWrapper'>
-    
-  </div>
-
-
-    </section>
 
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
   <script>
-
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
-      // console.log("All is loaded");
 
       let burgerBtn = document.getElementById('burger');
       burgerBtn.addEventListener('click', function() {
-        console.log("button was clicked");
         document.getElementById('menuList').classList.toggle('hide');
         document.getElementById('burgerIcon').classList.toggle('hide');
         document.getElementById('crossIcon').classList.toggle('hide');
