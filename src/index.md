@@ -3,7 +3,6 @@ layout: "layouts/frontpage.njk"
 title: "Frontpage"
 ---
 
-
 ![Cantina](assets/images/big.png)
 
 # Her er en overskrift til at demonstrere skrift med
