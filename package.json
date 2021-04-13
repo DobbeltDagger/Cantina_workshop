@@ -1,15 +1,17 @@
 {
   "name": "Cantina_Workshop",
   "version": "1.0.0",
-  "description": "14.-15- April",
+  "description": "14.-15. April",
   "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "deploy": "node deploy"
+  },  
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.1.6"
-  },
-  "scripts": {
-    "start": "npx @11ty/eleventy --serve"
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "ftp-deploy": "^2.4.1"
   },
   "keywords": [],
   "author": "",
