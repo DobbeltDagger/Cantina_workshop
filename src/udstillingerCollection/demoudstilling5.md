@@ -3,9 +3,9 @@ title: "Demoudstilling #5"
 description: "Her kommer den femte udstillings tekst!"
 url: 'https://processing.org/'
 urlTitle: "https://processing.org/"
-thumbUrl: '/assets/images/resourceThumbs/processing.jpg'
+thumbUrl: '/assets/images/udstillingerThumbs/5_thumb.jpg'
 target: '_blank'
-date: 2000-01-01
+date: 2005-01-01
 ---
 
 Her kommer der noget tekst for denne udstilling!  

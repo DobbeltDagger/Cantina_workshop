@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
+  <link href="/assets/css/newMasonry.css" rel="stylesheet" />
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
@@ -43,20 +44,22 @@
   </div>
 
 </header>
-    <!-- eleventyNavigation:
-  key: 'Frontpage'
-  title: 'Frontpage'
-  order: 1 -->
-<p><img src="assets/images/big.png" alt="Cantina"></p>
-<h1>Hey there. Here's our header!</h1>
+    
+
+  <p><img src="assets/images/big.png" alt="Cantina"></p>
+<h1>Her er en overskrift til at demonstrere skrift med</h1>
 <p>Hey there! .. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at quam interdum, pellentesque nibh ut, iaculis sapien. Donec id viverra mi. Suspendisse condimentum nisi mi, eget rhoncus enim vestibulum vitae. Nam vitae sapien at tortor sollicitudin luctus eget lacinia mi. Maecenas sodales ornare dui porttitor congue. Maecenas tempor gravida odio ac euismod. Proin id viverra eros. Curabitur volutpat sapien sodales viverra laoreet. Sed sit amet aliquam nulla, at pharetra erat. Suspendisse sit amet vulputate felis, elementum placerat leo. Nam scelerisque libero non felis gravida semper. Ut suscipit urna tellus, a gravida odio pretium sed. Vivamus mi neque, facilisis a posuere id, malesuada eget mauris.</p>
 <p>Aenean gravida nibh et condimentum sodales. Pellentesque at eros in nunc elementum sollicitudin. Aliquam blandit mollis risus, vitae tempor nisi sagittis sit amet. Vestibulum auctor nisl vitae dignissim congue. In mattis bibendum est, feugiat sagittis quam eleifend vel. Integer ornare rhoncus rhoncus. Maecenas posuere lacus a egestas bibendum. Vivamus lacinia augue et metus aliquam, quis pretium lectus dignissim. Quisque non ante vitae est rutrum consectetur.</p>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377468270?color=e0ff40&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<!-- <p><a href="https://vimeo.com/377468270">Peepin</a> from <a href="https://vimeo.com/bubblebrain">Paul and Haein</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+
 
 
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
+  <script src='/assets/js/newMasonry.js'></script>
   <script>
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
@@ -71,9 +74,19 @@
       // can i do this here?
       linkopener(true);
 
-      // on resize
-      resize();
-      window.onresize = resize;
+      // new Masonry
+      window.addEventListener('resize', function() {
+        console.log("resize!");
+        resizeAllGridItems();
+      });
+      // all is loaded, resize now!
+      resizeAllGridItems();
+
+      // call resize again after all images have loaded, do this right!
+      // I should check whether all images have loaded, and then fire the resize event
+      setTimeout(function() {
+        resizeAllGridItems();
+      }, 500); // 250
     })
   </script>
 </body>

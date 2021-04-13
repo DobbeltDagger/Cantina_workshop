@@ -1,4 +1,5 @@
-var minColWidth = 128;
+// Min pix width of the single cell!!
+var minColWidth = 300; // 128;
 var roots;
 
 
@@ -28,6 +29,8 @@ function onLoad() {
 
 ///////////////////////////////////////////////////////////////////
 function onResize() {
+
+  console.log("masonry -> onResize was called")
   for (let root of roots) {
     
     // only layout when the number of columns has changed
@@ -60,6 +63,8 @@ function onResize() {
         return column.outerHeight;
       }));
       
+      console.log("columns:", columns);
+
       // ...and conquer
       var order = 0;
       for (let column of columns) {
@@ -68,11 +73,14 @@ function onResize() {
           // set the cell's flex-basis to 0
           cell.element.style.flexBasis = 0;
         }
-        // set flex-basis of the last cell to fill the
-        // leftover space at the bottom of the column
-        // to prevent the first cell of the next column
-        // to be rendered at the bottom of this column
-        column.cells[column.cells.length - 1].element.style.flexBasis = column.cells[column.cells.length - 1].element.offsetHeight + masonryHeight - column.outerHeight - 1 + 'px';
+        // set flex-basis of the last cell to fill the leftover space at the bottom of the column
+        // to prevent the first cell of the next column to be rendered at the bottom of this column
+
+        // VISTI: check if column.cells.length - 1 >= 0
+        if (column.cells.length - 1 >= 0) {
+          column.cells[column.cells.length - 1].element.style.flexBasis = column.cells[column.cells.length - 1].element.offsetHeight + masonryHeight - column.outerHeight - 1 + 'px';
+        }
+
       }
 
       // set the masonry height to trigger
@@ -87,7 +95,3 @@ function onResize() {
     }
   }
 }
-
-// subscribe to load and resize events
-window.addEventListener('load', onLoad);
-window.addEventListener('resize', onResize);

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
+  <link href="/assets/css/newMasonry.css" rel="stylesheet" />
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
@@ -56,6 +57,7 @@
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
+  <script src='/assets/js/newMasonry.js'></script>
   <script>
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
@@ -70,9 +72,19 @@
       // can i do this here?
       linkopener(true);
 
-      // on resize
-      resize();
-      window.onresize = resize;
+      // new Masonry
+      window.addEventListener('resize', function() {
+        console.log("resize!");
+        resizeAllGridItems();
+      });
+      // all is loaded, resize now!
+      resizeAllGridItems();
+
+      // call resize again after all images have loaded, do this right!
+      // I should check whether all images have loaded, and then fire the resize event
+      setTimeout(function() {
+        resizeAllGridItems();
+      }, 500); // 250
     })
   </script>
 </body>

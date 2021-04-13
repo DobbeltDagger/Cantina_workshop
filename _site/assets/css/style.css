@@ -82,20 +82,21 @@ body {
   padding: 0em;
   height: 100%;
   overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;  
 }
 
 /* ********************************************** */
-/* Typo */
+/* Typography */
 
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 1.5rem 0px;
-  line-height: 1.05em;
+  line-height: 0.95em; /* 1em; /* 1.05em; */
   font-family: 'menuettoregular';
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  letter-spacing: 0.035em;
 }
-
-
 h1 {
   font-size: 4rem;
 }
@@ -105,7 +106,6 @@ h2 {
 h3 {
   font-size: 2rem;
 }
-
 p {
   margin: 0px 0px 1rem 0px;
 }

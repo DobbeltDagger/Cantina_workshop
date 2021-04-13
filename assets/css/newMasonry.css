@@ -1,0 +1,52 @@
+.masonryGrid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 20px;
+  margin-bottom: 2rem;
+}
+
+.masonryGrid .item {
+  background-color: transparent; /* #ffffff; */
+  font-size: 16px;
+  line-height: 23px; /* 24px; */
+}
+
+.masonryGrid .photothumb {
+  width: 100%;
+}
+
+.masonryGrid .title {
+  padding: 0px; /* 20px; */
+}
+
+.masonryGrid .title h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: black; /* #ffffff; */
+  text-transform: uppercase;
+  margin: 0.5rem 0px 0.25rem 0px;
+}
+
+.masonryGrid .udst {
+  /* display: block; */
+  width: 100%;
+  /* float: left; */
+}
+
+.masonryGrid .udst img {
+  /* display: block; */
+  width: 100%;
+  /* float: left; */
+}
+
+
+.masonryGrid .desc {
+  padding: 0px; /* 10px 10px 5px 10px; */
+}
+
+.masonryGrid .desc p {
+  margin-bottom: 10px; /* leave this */
+}

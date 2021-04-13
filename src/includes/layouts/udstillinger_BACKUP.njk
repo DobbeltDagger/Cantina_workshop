@@ -1,0 +1,89 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+
+  <h2>Udstillinger</h2>
+  <!-- <p>A list of resources that are being used, or referenced, frequently in the code&amp;share workshops. Links open in new windows</p> -->
+
+  <!-- new masonry grid -->
+  <!-- https://codepen.io/chriscoyier/pen/WNGQyvX -->
+  <div class="grid">
+
+    {% for udst in collections.udstillingerCollection %}
+      <div class="item blog">
+        <div class="content">
+          <div class="title">
+            <h3>1: Blog Post</h3>
+          </div>
+          <div class="desc">hep</div>
+        </div>
+      </div>
+    {% endfor %}      
+
+  </div> <!-- eof grid -->
+
+  <!-- trying masonry -->
+  <div class="masonry-root">
+
+    {% for udst in collections.udstillingerCollection %}
+      <div class='masonry-cell'>
+        <div class='masonry-item'>
+          <p>
+            {{ udst.data.title }}<br/>
+            {{ udst.data.description }}<br/>
+            1
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% for udst in collections.udstillingerCollection %}
+      <div class='masonry-cell'>
+        <div class='masonry-item'>
+          <!-- {{ udst.data.title }} -->
+          1
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- just doing it twice for more fill -->
+    <!-- {% for udst in collections.udstillingerCollection %}
+      <div class='masonry-cell'>
+        <div class='masonry-item'>
+          <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a></div>
+          <div class='info'>
+            <span class='title'>{{ udst.data.title }}</span>
+            {{ udst.data.description }}
+            <span class='link'><a href="{{ udst.data.url }}" target="_blank">{{ udst.data.urlTitle }}</a></span>
+          </div>
+        </div>
+      </div>
+    {% endfor %} -->
+
+  </div>
+
+
+  <!-- old school grid -->
+  <div class='udstillingerWrapper'>
+    {% for udst in collections.udstillingerCollection %}
+      <div class='udst'>
+        <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a></div>
+        <div class='info'>
+          <span class='title'>{{ udst.data.title }}</span>
+          {{ udst.data.description }}
+          <span class='link'><a href="{{ udst.data.url }}" target="_blank">{{ udst.data.urlTitle }}</a></span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock mainContent %}
+
+
+<script>
+
+  window.addEventListener("DOMContentLoaded", function() {
+    console.log("Udstillinger loaded");
+  })
+
+</script>

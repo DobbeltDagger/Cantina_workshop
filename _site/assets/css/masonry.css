@@ -1,25 +1,54 @@
-body {
-  margin: 8px;
-}
-
 .masonry-root {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: -8px -8px 1rem -8px;
 }
 .masonry-root .masonry-cell {
   flex: 1;
-  margin: 4px;
+  /* margin: 4px; */
+  padding: 4px;
+  /* no overflow */
+  /*
+  word-break: break-all;
+  overflow: hidden;  
+  */
+  /* width: calc(100% / 3); /* 33.3333%; */
 }
 .masonry-root .masonry-cell .masonry-item {
   background: #EC985A;
   color: white;
-  margin: 4px;
-  text-align: center;
-  font-family: system-ui;
-  font-weight: 900;
-  font-size: 32px;
+  /* margin: 4px; */
+  padding: 4px;
+
+  /* display: inline-block; */
+  /*
+  display: block;
+  float: left;
+  */
+
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start
+  */
 }
+
+.masonry-root .masonry-cell .masonry-item p {
+  /* align-self: inherit; */
+  
+  word-break: normal; /* break-all; */
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid red;
+}
+
+
+
+/* ******************************************************* */
+
 .masonry-root .masonry-cell:nth-child(1) .masonry-item {
   height: 176px;
   line-height: 176px;

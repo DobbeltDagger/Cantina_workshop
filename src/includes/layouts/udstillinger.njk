@@ -4,7 +4,29 @@
 
   <h2>Udstillinger</h2>
   <!-- <p>A list of resources that are being used, or referenced, frequently in the code&amp;share workshops. Links open in new windows</p> -->
-  <div class='udstillingerWrapper'>
+
+  <!-- new masonry grid -->
+  <!-- https://codepen.io/chriscoyier/pen/WNGQyvX -->
+  <div class="masonryGrid">
+
+    {% for udst in collections.udstillingerCollection | reverse %}
+      <div class="item udst">
+        <div class="content">
+          <a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a>
+          <div class="title">
+            <h3>{{ udst.data.title }}</h3>
+          </div>
+          <div class="desc">
+            {{ udst.data.description }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}      
+
+  </div> <!-- eof grid -->
+
+  <!-- old school grid -->
+  <!-- <div class='udstillingerWrapper'>
     {% for udst in collections.udstillingerCollection %}
       <div class='udst'>
         <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a></div>
@@ -15,6 +37,6 @@
         </div>
       </div>
     {% endfor %}
-  </div>
+  </div> -->
 
 {% endblock mainContent %}
