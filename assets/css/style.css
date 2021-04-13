@@ -227,14 +227,16 @@ header #menuList ul {
   display: block;
   float: left;
   width: 100%;
-  margin: 0px; padding: 0px;
+  margin: 0.5rem 0px 0px 0px; /* 0px; */
+  padding: 0px;
   border-bottom: 1px solid rgba(0,0,0, 0.25);
+  /* background-color: pink; */
 }
 header #menuList ul li {
   display: block;
   float: left;
   width: 100%;
-  border-top: 0px; /*  1px solid rgba(21,34,85, 0.35); */
+  border-top: 0px; /*  1px solid rgba(0, 0, 0, 0.35); */
   margin: 0px;
   padding: 0px;
 }
@@ -242,11 +244,14 @@ header #menuList ul li a {
   display: block;
   float: left;
   width: 100%;
-  padding: 0.5rem 0px;
-  line-height: 1.1em; /* 2em; */
+  padding: 0.25em 0px; /* 0.5rem 0px; */
+  line-height: 1em; /* 1.1em; /* 2em; */
   text-align: right; /* center; */
   color: var(--main-text-color); /* #152255; */
   text-decoration: none;
+}
+header #menuList ul li:last-of-type a {
+  padding: 0.25em 0px 0.75em 0px; /* 0.5rem 0px; */
 }
 
 header #menuList ul li a.activeAnchor {

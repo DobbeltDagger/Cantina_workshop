@@ -1,10 +1,7 @@
 ---
 title: "Demoudstilling #3"
 description: "Her kommer den tredje udstillings tekst!"
-url: 'https://processing.org/'
-urlTitle: "https://processing.org/"
 thumbUrl: '/assets/images/udstillingerThumbs/3_thumb.jpg'
-target: '_blank'
 date: 2003-01-01
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: "Demoudstilling #8"
 description: "Demoudstilling, præsenteres kort her. Klik på billedet"
-url: 'https://processing.org/'
-urlTitle: "https://processing.org/"
 thumbUrl: '/assets/images/udstillingerThumbs/8_thumb.jpg'
-target: '_blank'
 date: 2008-01-01
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: "Demoudstilling #5"
 description: "Her kommer den femte udstillings tekst!"
-url: 'https://processing.org/'
-urlTitle: "https://processing.org/"
 thumbUrl: '/assets/images/udstillingerThumbs/5_thumb.jpg'
-target: '_blank'
 date: 2005-01-01
 ---
 

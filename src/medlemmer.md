@@ -4,5 +4,5 @@ title: "Medlemmer"
 eleventyNavigation:
   key: 'Medlemmer'
   title: 'Medlemmer'
-  order: 2
+  order: 3
 ---

@@ -4,5 +4,5 @@ title: "Resources"
 eleventyNavigation:
   key: 'Resources'
   title: 'Resources'
-  order: 3
+  order: 2
 ---

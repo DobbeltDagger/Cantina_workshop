@@ -1,10 +1,7 @@
 ---
 title: "Demoudstilling #4"
 description: "Her kommer den fjerde udstillings tekst!"
-url: 'https://processing.org/'
-urlTitle: "https://processing.org/"
 thumbUrl: '/assets/images/udstillingerThumbs/4_thumb.jpg'
-target: '_blank'
 date: 2004-01-01
 ---
 

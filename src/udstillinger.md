@@ -1,8 +1,8 @@
 ---
-layout: "layouts/Udstillinger.njk"
+layout: "layouts/udstillinger.njk"
 title: "Udstillinger"
 eleventyNavigation:
   key: 'Udstillinger'
   title: 'Udstillinger'
-  order: 5
+  order: 1
 ---
