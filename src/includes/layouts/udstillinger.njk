@@ -6,6 +6,7 @@
 
   <!-- new masonry grid -->
   <!-- https://codepen.io/chriscoyier/pen/WNGQyvX -->
+  <!-- 
   <div class="masonryGrid">
 
     {% for udst in collections.udstillingerCollection | reverse %}
@@ -22,10 +23,10 @@
       </div>
     {% endfor %}      
 
-  </div> <!-- eof grid -->
+  </div> --> <!-- eof grid -->
 
   <!-- old school grid -->
-  <!-- <div class='udstillingerWrapper'>
+  <div class='udstillingerWrapper'>
     {% for udst in collections.udstillingerCollection %}
       <div class='udst'>
         <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a></div>
@@ -36,6 +37,6 @@
         </div>
       </div>
     {% endfor %}
-  </div> -->
+  </div>
 
 {% endblock mainContent %}

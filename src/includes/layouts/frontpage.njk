@@ -2,6 +2,63 @@
 
 {% block mainContent %}
 
-  {{ content | safe }}
+  <div class='programWrapper'>
+    {% for prog in collections.programCollection %}
+      <a href='{{ prog.data.link }}'><img src='{{ prog.data.plakat }}'/></a>
+      <!-- <div class='programText'>{{ prog.data.linkText }}</div> -->
+    {% endfor %}
+  </div>
+
+  {# content | safe #}
+
+  <!-- øvrige program-punkter herunder?? -->
+  <div class='belowProgramWrapper'>
+
+    <div class='inside'>
+
+      <!-- grid -->
+      <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan sed augue vitae vestibulum. Aenean eget est sapien. Phasellus nec metus finibus, aliquam est vitae, luctus justo. Suspendisse malesuada ut ex et suscipit. Nunc eu turpis turpis. Integer vestibulum tortor et volutpat tincidunt. Sed ut mattis arcu, ac finibus tortor.</p>
+        </div>
+        
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti.</p>
+        </div>
+
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Sed tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
+        </div>
+
+      </div>
+
+      <!-- grid -->
+      <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan sed augue vitae vestibulum. Aenean eget est sapien. Phasellus nec metus finibus, aliquam est vitae, luctus justo. Vestibulum aliquam aliquam ligula, in tincidunt odio consequat at.</p>
+        </div>
+        
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti. Tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
+        </div>
+
+        <div class="Grid-cell">
+          <h2>Program (other)</h2>
+          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti. Tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+  </div> <!-- eof belowProgramWrapper -->
 
 {% endblock mainContent %}

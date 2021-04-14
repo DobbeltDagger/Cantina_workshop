@@ -1,6 +1,7 @@
 ---
 title: "Demoudstilling #1"
 description: 'A flexible software sketchbook and a language for learning how to code within the context of the visual arts'
+imgUrl: '/assets/images/udstillingerStoreBilleder/1.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/1_thumb.jpg'
 date: 2000-01-01
 ---
