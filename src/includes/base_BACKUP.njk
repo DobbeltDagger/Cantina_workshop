@@ -45,8 +45,24 @@
       linkopener(true);
 
       // on resize
-      resize();
-      window.onresize = resize;
+      // resize();
+      // window.onresize = resize;
+
+      /*
+      // new Masonry
+      window.addEventListener('resize', function() {
+        console.log("resize!");
+        resizeAllGridItems();
+      });
+      // all is loaded, resize now!
+      resizeAllGridItems();
+
+      // call resize again after all images have loaded, do this right!
+      // I should check whether all images have loaded, and then fire the resize event
+      setTimeout(function() {
+        resizeAllGridItems();
+      }, 500); // 250
+      */      
     })
   </script>
 </body>

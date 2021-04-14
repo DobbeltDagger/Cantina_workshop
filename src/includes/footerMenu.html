@@ -1,0 +1,20 @@
+<footer>
+
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+        listElement: "ul",
+        listItemElement: "li",
+        listClass: "footerNav",
+        listItemClass: "listItem",
+        listItemHasChildrenClass: "hasChildren",
+        activeListItemClass: "active",
+        anchorClass: "anchor",
+        activeAnchorClass: "activeAnchor",
+        activeKey: eleventyNavigation.key,
+        showExcerpt: false
+      }) | safe }}
+    </div>
+  </div>
+
+</footer>

@@ -36,3 +36,43 @@ function resize() {
   // do something!
 
 }
+
+
+////////////////////////////////////////////////////////////////
+// get height of document
+const getDocHeight = () => {
+
+  var body = document.body;
+  var html = document.documentElement;
+
+  var height = Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight
+  );
+
+  return height;
+};
+
+
+
+////////////////////////////////////////////////////////////////
+const getScrollPosition = (elm) => {
+  const el = document.body; // window;
+  return (el.pageYOffset !== undefined) ? el.pageYOffset : el.scrollTop;
+};
+
+
+////////////////////////////////////////////////////////////////
+// scroll to X position
+const scrollToX = (xpos) => {
+  console.log("scrolltoX:", xpos);
+  // window.scrollTo({ top: xpos, left: 0, behavior: 'auto' }); // NO IE
+  window.scrollTo({ top: xpos, left: 0, behavior: 'smooth' }); // NO IE
+  // document.getElementById('pageWrapper').scrollTop = xpos;
+};
+
+
+

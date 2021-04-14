@@ -1,0 +1,38 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+
+  <div class='inside'>
+
+    <!-- GRID -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+
+      <!-- left col -->
+      <div class="Grid-cell">
+        <img src='{{ imgUrl }}'/>
+      </div>
+      <!-- 2nd column -->
+      <div class="Grid-cell">
+        <h2>{{ title }}</h2>
+        <p>{{ content | safe }}
+        <div class='backToArrow'><a href='/udstillinger'>&larr; tilbage</a></div>
+      </div>
+    </div>
+
+    <!-- spacer -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <div class='Grid-cell'><p>&nbsp;</p></div>
+    </div>
+
+    <!-- GRID for images below main content -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <div class='Grid-cell'>
+        <h2>Her kommer de andre billeder</h2>
+        <img src='{{ thumbUrl }}'/>
+      </div>
+    </div>
+
+  </div> <!-- eof grid -->
+
+
+{% endblock mainContent %}

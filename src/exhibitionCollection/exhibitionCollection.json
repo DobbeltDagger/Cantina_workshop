@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/exhibition_Single.njk",
+  "tags": "exhibitionCollection"
+}

@@ -7,76 +7,58 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
-  <link href="/assets/css/newMasonry.css" rel="stylesheet" />
+  <!-- <link href="/assets/css/newMasonry.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/Grid.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="pageWrapper">
+  <div id="pageWrapper">
 
-    <header class='headerWrapper'>
-  <div id='burgerMenuWrapper'>
-    <div id='logoWrapper'>
-      <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
-      <!-- <a href="/">CANTINA</a> -->
-    </div>
-    <div id='btnWrapper'>
-      <a id='burger'>
-        <div id='burgerIcon'>
-          <svg id='burgerSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
-            <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
-          </svg>
-        </div>
-        <div id='crossIcon' class='hide'>
-          <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
-            <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
-          </svg>
-        </div>
-      </a>
-    </div>
+    <header>
+
+  <div id='logoWrapper'>
+    <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
   </div>
 
-  <div id="menuList" class='hide'>
-    <ul class="mobileNav"><li class="listItem"><a href="/udstillinger/" class="anchor">Udstillinger</a></li>
-<li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
-<li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
-<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+  <!-- navIcon -->
+  <div id='navIconWrapper'>
+    <a id='navIconBtn' href=''><img src='/assets/images/navIcon.png'/></a>
+    <div id='showScroll'></div>
   </div>
 
 </header>
     
 
-
   <div class='inside'>
 
     <!-- GRID -->
-    <div class='Grid'>
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
 
       <!-- left col -->
       <div class="Grid-cell">
-        <img src=''/>
+        <img src='/assets/images/udstillingerStoreBilleder/9.jpg'/>
       </div>
       <!-- 2nd column -->
       <div class="Grid-cell">
-        <div class='backToArrow'><a href='/udstillinger'>&larr; tilbage</a></div>
         <h2>Demoudstilling #9</h2>
         <p><p>Her kommer der noget tekst for denne udstilling!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices vel magna non sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Sed porta sodales efficitur. Integer eros justo, laoreet ac sapien volutpat, scelerisque dapibus <strong>enim</strong>. Morbi molestie sed libero id lobortis. Vestibulum sodales dignissim libero, quis accumsan magna accumsan non. Ut dictum dapibus sagittis. Donec commodo pulvinar mi vel porta. Suspendisse at sollicitudin purus. Donec finibus vehicula risus. Pellentesque ut aliquet metus, at commodo turpis. Suspendisse maximus felis ullamcorper pellentesque varius.</p>
 <p>Quisque nec orci lectus. Ut non ligula id elit convallis tempus. Nulla condimentum ante sed mollis dapibus. Nam vel fermentum odio. Nullam a arcu diam. Ut nec pellentesque dui. Donec at nunc lobortis, dignissim elit quis, posuere nulla. Nulla diam tortor, gravida a ante ac, ultricies venenatis lorem. Sed rutrum tortor ut sapien tempor, eu luctus arcu sollicitudin. Donec non dui nunc. Suspendisse pellentesque viverra diam a tempus. Nunc id finibus sem. Cras orci lacus, pulvinar sit amet elit sit amet, ornare pellentesque felis. Nulla justo lacus, congue eu est id, euismod sodales risus. Proin eget tortor in leo volutpat malesuada quis id quam. Vivamus metus nulla, volutpat ut odio maximus, posuere pellentesque ligula.</p>
 <p>Sed mollis felis nec augue suscipit vulputate. Nam sed bibendum purus. Nam accumsan pretium viverra. Vivamus laoreet, sapien quis malesuada volutpat, libero lacus egestas elit, in ultricies leo orci et diam. Sed mollis neque id consequat efficitur. In eu nisl diam. Mauris porta dictum erat id dictum. Etiam vel lectus sagittis, viverra sapien et, aliquam felis.</p>
 
+        <div class='backToArrow'><a href='/udstillinger'>&larr; tilbage</a></div>
       </div>
     </div>
 
     <!-- spacer -->
-    <div class='Grid'>
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
       <div class='Grid-cell'><p>&nbsp;</p></div>
     </div>
 
     <!-- GRID for images below main content -->
-    <div class='Grid'>
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
       <div class='Grid-cell'>
         <h2>Her kommer de andre billeder</h2>
         <img src='/assets/images/udstillingerThumbs/9_thumb.jpg'/>
@@ -88,38 +70,63 @@
 
 
 
+    <footer>
+
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+      <ul class="footerNav"><li class="listItem"><a href="/" class="anchor">Frontpage</a></li>
+<li class="listItem"><a href="/udstillinger/" class="anchor">Exhibitions</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+    </div>
+  </div>
+
+</footer>
+
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
-  <script src='/assets/js/newMasonry.js'></script>
+  <!-- <script src='/assets/js/newMasonry.js'></script> -->
   <script>
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
 
-      let burgerBtn = document.getElementById('burger');
-      burgerBtn.addEventListener('click', function() {
-        document.getElementById('menuList').classList.toggle('hide');
-        document.getElementById('burgerIcon').classList.toggle('hide');
-        document.getElementById('crossIcon').classList.toggle('hide');
-      });
+      const navIcon = document.getElementById("navIconBtn");
+      navIcon.addEventListener('click', function(e) {
+
+        e.preventDefault();
+        console.log("navIcon was clicked");
+
+        const scElm = document.getElementById('pageWrapper');
+        console.log("scElm:", scElm);
+
+        // get height of page scroll
+        const scPos = getScrollPosition();
+        console.log("scPos:", scPos);
+
+        const docHeight = getDocHeight();
+        console.log("docHeight:", docHeight);
+
+        scrollToX(docHeight);
+      })
 
       // can i do this here?
       linkopener(true);
 
-      // new Masonry
-      window.addEventListener('resize', function() {
-        console.log("resize!");
-        resizeAllGridItems();
-      });
-      // all is loaded, resize now!
-      resizeAllGridItems();
+      // reset scroll
+      // scrollToX(0); // no difference
 
-      // call resize again after all images have loaded, do this right!
-      // I should check whether all images have loaded, and then fire the resize event
+      window.addEventListener('scroll', function() {
+        document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
+      });
+
+      /*
+      // testScroll
       setTimeout(function() {
-        resizeAllGridItems();
-      }, 500); // 250
+        scrollToX(300);
+      }, 2000)
+      */
+
     })
   </script>
 </body>

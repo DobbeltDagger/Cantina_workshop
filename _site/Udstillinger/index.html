@@ -7,307 +7,204 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png"> -->
   <title>CANTINA</title>
-  <link href="/assets/css/newMasonry.css" rel="stylesheet" />
+  <!-- <link href="/assets/css/newMasonry.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/Grid.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="pageWrapper">
+  <div id="pageWrapper">
 
-    <header class='headerWrapper'>
-  <div id='burgerMenuWrapper'>
-    <div id='logoWrapper'>
-      <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
-      <!-- <a href="/">CANTINA</a> -->
-    </div>
-    <div id='btnWrapper'>
-      <a id='burger'>
-        <div id='burgerIcon'>
-          <svg id='burgerSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
-            <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z' />
-          </svg>
-        </div>
-        <div id='crossIcon' class='hide'>
-          <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
-            <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
-          </svg>
-        </div>
-      </a>
-    </div>
+    <header>
+
+  <div id='logoWrapper'>
+    <a href="/"><img src='/assets/images/Logo.png' alt='Cantina'/></a>
   </div>
 
-  <div id="menuList" class='hide'>
-    <ul class="mobileNav"><li class="listItem active"><a href="/udstillinger/" class="anchor activeAnchor">Udstillinger</a></li>
-<li class="listItem"><a href="/resources/" class="anchor">Resources</a></li>
-<li class="listItem"><a href="/medlemmer/" class="anchor">Medlemmer</a></li>
-<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+  <!-- navIcon -->
+  <div id='navIconWrapper'>
+    <a id='navIconBtn' href=''><img src='/assets/images/navIcon.png'/></a>
+    <div id='showScroll'></div>
   </div>
 
 </header>
     
 
-  <h2>Udstillinger</h2>
+  
 
   <!-- new masonry grid -->
   <!-- https://codepen.io/chriscoyier/pen/WNGQyvX -->
   <!-- 
   <div class="masonryGrid">
 
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling10/'><img src='/assets/images/udstillingerThumbs/10_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #10</h3>
-          </div>
-          <div class="desc">
-            Demoudstilling, præsenteres kort her. Klik på billedet
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling9/'><img src='/assets/images/udstillingerThumbs/9_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #9</h3>
-          </div>
-          <div class="desc">
-            Demoudstilling, præsenteres kort her. Klik på billedet
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling8/'><img src='/assets/images/udstillingerThumbs/8_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #8</h3>
-          </div>
-          <div class="desc">
-            Demoudstilling, præsenteres kort her. Klik på billedet
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling7/'><img src='/assets/images/udstillingerThumbs/7_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #7</h3>
-          </div>
-          <div class="desc">
-            Demoudstilling, præsenteres kort her. Klik på billedet
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling6/'><img src='/assets/images/udstillingerThumbs/6_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #6</h3>
-          </div>
-          <div class="desc">
-            Demoudstilling, præsenteres kort her. Klik på billedet
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling5/'><img src='/assets/images/udstillingerThumbs/5_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #5</h3>
-          </div>
-          <div class="desc">
-            Her kommer den femte udstillings tekst!
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling4/'><img src='/assets/images/udstillingerThumbs/4_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #4</h3>
-          </div>
-          <div class="desc">
-            Her kommer den fjerde udstillings tekst!
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling3/'><img src='/assets/images/udstillingerThumbs/3_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #3</h3>
-          </div>
-          <div class="desc">
-            Her kommer den tredje udstillings tekst!
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling2/'><img src='/assets/images/udstillingerThumbs/2_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #2</h3>
-          </div>
-          <div class="desc">
-            Her kommer den anden udstillings tekst!
-          </div>
-        </div>
-      </div>
-    
-      <div class="item udst">
-        <div class="content">
-          <a href='/udstillingerCollection/demoudstilling1/'><img src='/assets/images/udstillingerThumbs/1_thumb.jpg'></a>
-          <div class="title">
-            <h3>Demoudstilling #1</h3>
-          </div>
-          <div class="desc">
-            A flexible software sketchbook and a language for learning how to code within the context of the visual arts
-          </div>
-        </div>
-      </div>
           
 
   </div> --> <!-- eof grid -->
 
   <!-- old school grid -->
-  <div class='udstillingerWrapper'>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling1/'><img src='/assets/images/udstillingerThumbs/1_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #1</span>
-          A flexible software sketchbook and a language for learning how to code within the context of the visual arts
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+
+      <h2>Exhibitions</h2>
+
+      <div class='udstillingerWrapper'>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling10/'><img src='/assets/images/udstillingerThumbs/10_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #10</span>
+              Demoudstilling, præsenteres kort her. Klik på billedet
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling9/'><img src='/assets/images/udstillingerThumbs/9_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #9</span>
+              Demoudstilling, præsenteres kort her. Klik på billedet
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling8/'><img src='/assets/images/udstillingerThumbs/8_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #8</span>
+              Demoudstilling, præsenteres kort her. Klik på billedet
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling7/'><img src='/assets/images/udstillingerThumbs/7_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #7</span>
+              Demoudstilling, præsenteres kort her. Klik på billedet
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling6/'><img src='/assets/images/udstillingerThumbs/6_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #6</span>
+              Demoudstilling, præsenteres kort her. Klik på billedet
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling5/'><img src='/assets/images/udstillingerThumbs/5_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #5</span>
+              Her kommer den femte udstillings tekst!
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling4/'><img src='/assets/images/udstillingerThumbs/4_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #4</span>
+              Her kommer den fjerde udstillings tekst!
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling3/'><img src='/assets/images/udstillingerThumbs/3_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #3</span>
+              Her kommer den tredje udstillings tekst!
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling2/'><img src='/assets/images/udstillingerThumbs/2_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #2</span>
+              Her kommer den anden udstillings tekst!
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
+          <div class='udst'>
+            <div class='img'><a href='/exhibitionCollection/demoudstilling1/'><img src='/assets/images/udstillingerThumbs/1_thumb.jpg'></a></div>
+            <div class='info'>
+              <span class='title'>Demoudstilling #1</span>
+              A flexible software sketchbook and a language for learning how to code within the context of the visual arts
+              <span class='link'><a href="" target="_blank"></a></span>
+            </div>
+          </div>
+        
       </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling2/'><img src='/assets/images/udstillingerThumbs/2_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #2</span>
-          Her kommer den anden udstillings tekst!
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling3/'><img src='/assets/images/udstillingerThumbs/3_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #3</span>
-          Her kommer den tredje udstillings tekst!
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling4/'><img src='/assets/images/udstillingerThumbs/4_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #4</span>
-          Her kommer den fjerde udstillings tekst!
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling5/'><img src='/assets/images/udstillingerThumbs/5_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #5</span>
-          Her kommer den femte udstillings tekst!
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling6/'><img src='/assets/images/udstillingerThumbs/6_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #6</span>
-          Demoudstilling, præsenteres kort her. Klik på billedet
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling7/'><img src='/assets/images/udstillingerThumbs/7_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #7</span>
-          Demoudstilling, præsenteres kort her. Klik på billedet
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling8/'><img src='/assets/images/udstillingerThumbs/8_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #8</span>
-          Demoudstilling, præsenteres kort her. Klik på billedet
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling9/'><img src='/assets/images/udstillingerThumbs/9_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #9</span>
-          Demoudstilling, præsenteres kort her. Klik på billedet
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
-      <div class='udst'>
-        <div class='img'><a href='/udstillingerCollection/demoudstilling10/'><img src='/assets/images/udstillingerThumbs/10_thumb.jpg'></a></div>
-        <div class='info'>
-          <span class='title'>Demoudstilling #10</span>
-          Demoudstilling, præsenteres kort her. Klik på billedet
-          <span class='link'><a href="" target="_blank"></a></span>
-        </div>
-      </div>
-    
+
+    </div>
   </div>
 
 
+
+    <footer>
+
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+      <ul class="footerNav"><li class="listItem"><a href="/" class="anchor">Frontpage</a></li>
+<li class="listItem active"><a href="/udstillinger/" class="anchor activeAnchor">Exhibitions</a></li>
+<li class="listItem"><a href="/Presse/" class="anchor">Frontpage</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+    </div>
+  </div>
+
+</footer>
 
   </div>
 
   <!-- scripts -->
   <script src='/assets/js/functions.js'></script>
-  <script src='/assets/js/newMasonry.js'></script>
+  <!-- <script src='/assets/js/newMasonry.js'></script> -->
   <script>
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
 
-      let burgerBtn = document.getElementById('burger');
-      burgerBtn.addEventListener('click', function() {
-        document.getElementById('menuList').classList.toggle('hide');
-        document.getElementById('burgerIcon').classList.toggle('hide');
-        document.getElementById('crossIcon').classList.toggle('hide');
-      });
+      const navIcon = document.getElementById("navIconBtn");
+      navIcon.addEventListener('click', function(e) {
+
+        e.preventDefault();
+        console.log("navIcon was clicked");
+
+        const scElm = document.getElementById('pageWrapper');
+        console.log("scElm:", scElm);
+
+        // get height of page scroll
+        const scPos = getScrollPosition();
+        console.log("scPos:", scPos);
+
+        const docHeight = getDocHeight();
+        console.log("docHeight:", docHeight);
+
+        scrollToX(docHeight);
+      })
 
       // can i do this here?
       linkopener(true);
 
-      // new Masonry
-      window.addEventListener('resize', function() {
-        console.log("resize!");
-        resizeAllGridItems();
-      });
-      // all is loaded, resize now!
-      resizeAllGridItems();
+      // reset scroll
+      // scrollToX(0); // no difference
 
-      // call resize again after all images have loaded, do this right!
-      // I should check whether all images have loaded, and then fire the resize event
+      window.addEventListener('scroll', function() {
+        document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
+      });
+
+      /*
+      // testScroll
       setTimeout(function() {
-        resizeAllGridItems();
-      }, 500); // 250
+        scrollToX(300);
+      }, 2000)
+      */
+
     })
   </script>
 </body>
