@@ -179,8 +179,8 @@ header #logoWrapper a img {
 /* navIcon */
 #navIconWrapper {
   position: fixed;
-  right: 2rem; /* 1rem; */
-  top: 2rem;
+  right: 2.5rem; /* 1rem; */
+  top: 2.5rem;
   max-height: 10vh;
   width: auto;
   text-align: right;
@@ -231,8 +231,10 @@ header #logoWrapper a img {
 }
 /* info */
 .udstillingerWrapper .udst .info {
-  font-size: 16px;
-  line-height: 21px;
+  /* font-size: 16px;
+  line-height: 21px; */
+  font-size: 18px;
+  line-height: 26px;  
 }
 .udstillingerWrapper .udst .info .title {
   display: block;
@@ -290,7 +292,7 @@ header #logoWrapper a img {
 }
 .belowProgramWrapper p {
   font-size: 18px;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 /* inside grid */
@@ -333,7 +335,7 @@ footer ul.footerNav li {
 
 footer ul.footerNav li a {
   text-decoration: none;
-  font-family: "menuetto";
+  font-family: 'menuettoregular';
   color: var(--main-text-color);
   font-size: 1.25em;
   text-transform: uppercase;

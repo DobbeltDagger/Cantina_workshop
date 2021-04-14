@@ -7,7 +7,7 @@
   <div class='bgWrapper'></div>
 
   <div class='programWrapper'>
-    {% for prog in collections.programCollection %}
+    {% for prog in collections.currentProgram %}
       <a href='{{ prog.data.link }}'><img src='{{ prog.data.plakat }}'/></a>
       <!-- <div class='programText'>{{ prog.data.linkText }}</div> -->
     {% endfor %}
@@ -23,7 +23,6 @@
       <!-- overskrift -->
       <div class="Grid Grid--gutters Grid--full large-Grid--fit">
         <div class="Grid-cell">
-          <!-- <h2 class='centered'>Upcoming</h2> -->
           <h2>Upcoming</h2>
         </div>
       </div>
