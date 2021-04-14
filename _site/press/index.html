@@ -31,15 +31,29 @@
 </header>
     
 
-  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-    <div class='Grid-cell'>
+  <div class='inside'>
 
-      <h2>Press</h2>
-      <p>Omtaler, men tilhørende links</p>
+    <!-- title -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <div class='Grid-cell'>
+        <h2>Press</h2>
+      </div>
+    </div>
+
+    <!-- kolonner -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      
+      <div class='Grid-cell'>
+        <p>Omtaler, med tilhørende links</p>
+      </div>
+
+      <div class='Grid-cell'>
+        <p>...</p>
+      </div>
 
     </div>
-  </div>
 
+  </div>
 
 
     <footer>
@@ -86,20 +100,11 @@
       // can i do this here?
       linkopener(true);
 
-      // reset scroll
-      // scrollToX(0); // no difference
-
+      /*
       window.addEventListener('scroll', function() {
         document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
       });
-
-      /*
-      // testScroll
-      setTimeout(function() {
-        scrollToX(300);
-      }, 2000)
       */
-
     })
   </script>
 </body>

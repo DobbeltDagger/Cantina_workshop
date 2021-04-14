@@ -103,6 +103,10 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+h2.centered {
+  text-align: center;
+  border-bottom: 1px dashed var(--main-text-color);
+}
 h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -118,11 +122,31 @@ p {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  /* background: url(/assets/images/Baggrund_FRONT.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain; /* cover; /* contain; */
 }
 #pageWrapper::after {
   content: "";
   clear: both;
   display: table;
+}
+
+
+/* front page bg */
+.bgWrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(/assets/images/Baggrund_FRONT3.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 90vh; /*  contain; /* cover; /* contain; */
+  opacity: 0.125;
+  z-index: -1;
 }
 
 
