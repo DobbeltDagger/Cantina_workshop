@@ -4,6 +4,10 @@ description: "Demoudstilling, præsenteres kort her. Klik på billedet"
 imgUrl: '/assets/images/udstillingerStoreBilleder/10.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/10_thumb.jpg'
 date: 2010-01-01
+gallery:
+ - '/assets/images/udstillingerStoreBilleder/10.jpg'
+ - '/assets/images/udstillingerStoreBilleder/10.jpg'
+ - '/assets/images/udstillingerStoreBilleder/10.jpg'
 ---
 
 Her kommer der noget tekst for denne udstilling!  

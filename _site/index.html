@@ -38,7 +38,6 @@
   <div class='programWrapper'>
     
       <a href='https://google.dk'><img src='assets/images/programStoreBilleder/DeathOrGlory.png'/></a>
-      <!-- <div class='programText'>Her kommer det tekst der skal klikkes på</div> -->
     
   </div>
 
@@ -56,37 +55,83 @@
         </div>
       </div>
 
-      <!-- grid -->
+      <!-- grid, upcoming program items -->
+      <div class="belowProgramWrapper">
+
+        <div class='inside'>
+          <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+              
+              
+                <div class="Grid-cell">
+                  <h3>demoProgram #5</h3>
+                  <p>Her kommer der noget <strong>tekst</strong> som skal på forsiden!</p>
+
+                  <p><a href='https://google.dk'>link</a></p>
+                </div>
+              
+                <div class="Grid-cell">
+                  <h3>demoProgram #7</h3>
+                  <p>Her kommer det tekst der skal klikkes på. Denne tekst beskriver f.eks <em>udstilling 8</em></p>
+
+                  <p><a href='/exhibitionCollection/demoudstilling8/'>link</a></p>
+                </div>
+              
+                <div class="Grid-cell">
+                  <h3>demoProgram #6</h3>
+                  <p>Her kommer det tekst der skal klikkes på</p>
+
+                  <p><a href='https://google.dk'>link</a></p>
+                </div>
+              
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- overskrift -->
       <div class="Grid Grid--gutters Grid--full large-Grid--fit">
         <div class="Grid-cell">
-          <h3>Program (other)</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan sed augue vitae vestibulum. Aenean eget est sapien. Phasellus nec metus finibus, aliquam est vitae, luctus justo. Suspendisse malesuada ut ex et suscipit. Nunc eu turpis turpis. Integer vestibulum tortor et volutpat tincidunt. Sed ut mattis arcu, ac finibus tortor.</p>
-        </div>
-        <div class="Grid-cell">
-          <h3>Program of something. Annoyingly long header here</h3>
-          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti.</p>
-        </div>
-        <div class="Grid-cell">
-          <h3>Program (other)</h3>
-          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Sed tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
+          <h2>Previous</h2>
         </div>
       </div>
 
-      <!-- grid -->
-      <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-        <div class="Grid-cell">
-          <h3>Program (other)</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan sed augue vitae vestibulum. Aenean eget est sapien. Phasellus nec metus finibus, aliquam est vitae, luctus justo. Vestibulum aliquam aliquam ligula, in tincidunt odio consequat at.</p>
+
+      <!-- grid, upcoming program items -->
+      <div class="belowProgramWrapper">
+
+        <div class='inside'>
+          <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+              
+            
+              <div class="Grid-cell">
+                <h3>demoProgram #4</h3>
+                <p>Her kommer det tekst der skal klikkes på</p>
+
+                <p><a href='https://google.dk'>link</a></p>
+              </div>
+            
+              <div class="Grid-cell">
+                <h3>demoProgram #3</h3>
+                <p>Her kommer det tekst der skal klikkes på</p>
+
+                <p><a href='https://google.dk'>link</a></p>
+              </div>
+            
+              <div class="Grid-cell">
+                <h3>demoProgram #2</h3>
+                <p>Her kommer det tekst der skal klikkes på</p>
+
+                <p><a href='https://google.dk'>link</a></p>
+              </div>
+            
+
+          </div>
         </div>
-        <div class="Grid-cell">
-          <h3>Program (other)</h3>
-          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti. Tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
-        </div>
-        <div class="Grid-cell">
-          <h3>Program (other)</h3>
-          <p>Phasellus aliquam tellus vel nunc consectetur, id scelerisque justo porttitor. Sed nec magna eu orci tincidunt ultrices quis id eros. Suspendisse tempus nunc et accumsan dictum. Mauris et enim libero. Quisque ullamcorper id magna ac accumsan. Suspendisse potenti. Tristique hendrerit lectus, ut sodales arcu iaculis vitae. Mauris finibus porta rhoncus.</p>
-        </div>
+
       </div>
+
       
     </div> <!-- eof inside -->
 
@@ -119,14 +164,15 @@
       navIcon.addEventListener('click', function(e) {
 
         e.preventDefault();
-        console.log("navIcon was clicked");
+        // console.log("navIcon was clicked");
 
+        /*
         const scElm = document.getElementById('pageWrapper');
         console.log("scElm:", scElm);
-
         // get height of page scroll
         const scPos = getScrollPosition();
         console.log("scPos:", scPos);
+        */
 
         const docHeight = getDocHeight();
         console.log("docHeight:", docHeight);

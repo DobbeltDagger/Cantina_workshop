@@ -12,7 +12,8 @@ function linkopener(a) {
         this.target = b;
       });
       c[i].target = b;
-      c[i].className += ' external-link';
+      // c[i].className += ' external-link';
+      c[i].classList.add('external-link');
     }
   }
 };

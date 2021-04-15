@@ -4,6 +4,11 @@
 
   <div class='inside'>
 
+    <!-- title -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <div class='Grid-cell'><h2>{{ title }}</h2></div>
+    </div>
+
     <!-- GRID -->
     <div class="Grid Grid--gutters Grid--full large-Grid--fit">
 
@@ -13,8 +18,8 @@
       </div>
       <!-- 2nd column -->
       <div class="Grid-cell">
-        <h2>{{ title }}</h2>
-        <p>{{ content | safe }}
+        <!-- <h2>{{ title }}</h2> -->
+        {{ content | safe }}
         <div class='backToArrow'><a href='/udstillinger'>&larr; tilbage</a></div>
       </div>
     </div>

@@ -258,6 +258,7 @@ header #logoWrapper a img {
   height: 80vh;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 4rem;
 }
 
 .programWrapper a {
@@ -288,7 +289,6 @@ header #logoWrapper a img {
   display: block;
   width: 100%;
   padding: 0px; /* 2rem; */
-  padding-top: 4rem;
 }
 .belowProgramWrapper p {
   font-size: 18px;
