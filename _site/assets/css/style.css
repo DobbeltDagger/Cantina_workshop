@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'menuettoregular';
   font-weight: 400;
   letter-spacing: 0.035em;
+  /* border: 1px solid green; */
 }
 h1 {
   font-size: 4rem;
@@ -303,6 +304,12 @@ header #logoWrapper a img {
   padding: 0px; /* 0px 1rem; */
 }
 
+.insideCol {
+  max-width: 600px;
+  /* border: 1px solid green; */
+  margin: 0px auto;
+  padding: 0px; /* 0px 1rem; */
+}
 
 
 

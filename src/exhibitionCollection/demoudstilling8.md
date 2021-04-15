@@ -3,8 +3,14 @@ title: "Demoudstilling #8"
 description: "Demoudstilling, præsenteres kort her. Klik på billedet"
 imgUrl: '/assets/images/udstillingerStoreBilleder/8.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/8_thumb.jpg'
+belowMainImage:
+- billede1
+- billede2
+- billede3
 date: 2008-01-01
 ---
+
+<h2><b>Her kommer en overskrift</b></h2>
 
 Her kommer der noget tekst for denne udstilling!  
 

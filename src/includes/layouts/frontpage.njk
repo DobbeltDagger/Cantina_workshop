@@ -17,7 +17,7 @@
   <!-- øvrige program-punkter herunder?? -->
   <div class='belowProgramWrapper'>
 
-    <div class='inside'>
+    <div class='insideCol'>
 
       <!-- overskrift -->
       <div class="Grid Grid--gutters Grid--full large-Grid--fit">
@@ -29,19 +29,19 @@
       <!-- grid, upcoming program items -->
       <div class="belowProgramWrapper">
 
-        <div class='inside'>
           <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+            <div class="Grid-cell">
+
+            {% for prog in collections.upcomingProgram | reverse %}
               
-              {% for prog in collections.upcomingProgram | reverse %}
-                <div class="Grid-cell">
-                  <h3>{{ prog.data.title }}</h3>
-                  {{ prog.data.content | safe }}
-                  <p><a href='{{ prog.data.link }}'>link</a></p>
-                </div>
-              {% endfor %}
+                <a href='{{ prog.data.link }}'><h3>{{ prog.data.title }} &rarr;</h3></a>
+                {{ prog.data.content | safe }}
+                <!-- <p><a href='{{ prog.data.link }}'>link</a></p> -->
+              
+            {% endfor %}
+            </div>
 
           </div>
-        </div>
 
       </div>
 
@@ -57,19 +57,18 @@
       <!-- grid, upcoming program items -->
       <div class="belowProgramWrapper">
 
-        <div class='inside'>
           <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-              
+            <div class="Grid-cell">
             {% for prog in collections.previousProgram | reverse %}
-              <div class="Grid-cell">
-                <h3>{{ prog.data.title }}</h3>
+              
+                <a href='{{ prog.data.link }}'><h3>{{ prog.data.title }}</h3></a>
                 {{ prog.data.content | safe }}
-                <p><a href='{{ prog.data.link }}'>link</a></p>
-              </div>
+                <!-- <p><a href='{{ prog.data.link }}'>link</a></p> -->
+              
             {% endfor %}
+            </div>
 
           </div>
-        </div>
 
       </div>
 
