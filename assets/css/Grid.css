@@ -1,208 +1,229 @@
 /* https://philipwalton.github.io/solved-by-flexbox/demos/grids/ */
 
 .Grid {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0 2rem;
-  }
-  
-  .Grid-cell {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Grid--flexCells > .Grid-cell {
+  display: flex;
+}
+
+.Grid--top {
+  align-items: flex-start;
+}
+
+.Grid--bottom {
+  align-items: flex-end;
+}
+
+.Grid--center {
+  align-items: center;
+}
+
+.Grid--justifyCenter {
+  justify-content: center;
+}
+
+.Grid-cell--top {
+  align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+
+.Grid-cell--center {
+  align-self: center;
+}
+
+.Grid-cell--autoSize {
+  flex: none;
+}
+
+.Grid--fit > .Grid-cell {
+  flex: 1;
+}
+
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 50%;
+}
+
+.Grid--1of3 > .Grid-cell {
+  flex: 0 0 33.3333%;
+}
+
+.Grid--1of4 > .Grid-cell {
+  flex: 0 0 25%;
+}
+
+@media {
+  .small-Grid--fit > .Grid-cell {
     flex: 1;
   }
-  
-  .Grid--flexCells > .Grid-cell {
-    display: flex;
-  }
-  
-  .Grid--top {
-    align-items: flex-start;
-  }
-  
-  .Grid--bottom {
-    align-items: flex-end;
-  }
-  
-  .Grid--center {
-    align-items: center;
-  }
-  
-  .Grid--justifyCenter {
-    justify-content: center;
-  }
-  
-  .Grid-cell--top {
-    align-self: flex-start;
-  }
-  
-  .Grid-cell--bottom {
-    align-self: flex-end;
-  }
-  
-  .Grid-cell--center {
-    align-self: center;
-  }
-  
-  .Grid-cell--autoSize {
-    flex: none;
-  }
-  
-  .Grid--fit > .Grid-cell {
-    flex: 1;
-  }
-  
-  .Grid--full > .Grid-cell {
+  .small-Grid--full > .Grid-cell {
     flex: 0 0 100%;
   }
-  
-  .Grid--1of2 > .Grid-cell {
+  .small-Grid--1of2 > .Grid-cell {
     flex: 0 0 50%;
   }
-  
-  .Grid--1of3 > .Grid-cell {
+  .small-Grid--1of3 > .Grid-cell {
     flex: 0 0 33.3333%;
   }
-  
-  .Grid--1of4 > .Grid-cell {
+  .small-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%;
   }
-  
-  @media {
-    .small-Grid--fit > .Grid-cell {
-      flex: 1;
-    }
-    .small-Grid--full > .Grid-cell {
-      flex: 0 0 100%;
-    }
-    .small-Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-    }
-    .small-Grid--1of3 > .Grid-cell {
-      flex: 0 0 33.3333%;
-    }
-    .small-Grid--1of4 > .Grid-cell {
-      flex: 0 0 25%;
-    }
+}
+
+@media (min-width: 400px) {
+  .med-Grid--fit > .Grid-cell {
+    flex: 1;
   }
-  
-  @media (min-width: 400px) {
-    .med-Grid--fit > .Grid-cell {
-      flex: 1;
-    }
-    .med-Grid--full > .Grid-cell {
-      flex: 0 0 100%;
-    }
-    .med-Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-    }
-    .med-Grid--1of3 > .Grid-cell {
-      flex: 0 0 33.3333%;
-    }
-    .med-Grid--1of4 > .Grid-cell {
-      flex: 0 0 25%;
-    }
+  .med-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
   }
-  
-  @media (min-width: 800px) {
-    .large-Grid--fit > .Grid-cell {
-      flex: 1;
-    }
-    .large-Grid--full > .Grid-cell {
-      flex: 0 0 100%;
-    }
-    .large-Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-    }
-    .large-Grid--1of3 > .Grid-cell {
-      flex: 0 0 33.3333%;
-    }
-    .large-Grid--1of4 > .Grid-cell {
-      flex: 0 0 25%;
-    }
+  .med-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
   }
-  
-  /* grid gutters */
-  .Grid--gutters {
+  .med-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .med-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .large-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .large-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .large-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .large-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+/* grid gutters */
+.Grid--gutters {
+  margin: -1em 0 1em -1em;
+}
+.Grid--gutters > .Grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+.Grid--guttersLg {
+  margin: -1.5em 0 1.5em -1.5em;
+}
+.Grid--guttersLg > .Grid-cell {
+  padding: 1.5em 0 0 1.5em;
+}
+
+.Grid--guttersXl {
+  margin: -2em 0 2em -2em;
+}
+.Grid--guttersXl > .Grid-cell {
+  padding: 2em 0 0 2em;
+}
+
+@media {
+  .small-Grid--gutters {
     margin: -1em 0 1em -1em;
   }
-  .Grid--gutters > .Grid-cell {
+  .small-Grid--gutters > .Grid-cell {
     padding: 1em 0 0 1em;
   }
-  
-  .Grid--guttersLg {
+  .small-Grid--guttersLg {
     margin: -1.5em 0 1.5em -1.5em;
   }
-  .Grid--guttersLg > .Grid-cell {
+  .small-Grid--guttersLg > .Grid-cell {
     padding: 1.5em 0 0 1.5em;
   }
-  
-  .Grid--guttersXl {
+  .small-Grid--guttersXl {
     margin: -2em 0 2em -2em;
   }
-  .Grid--guttersXl > .Grid-cell {
+  .small-Grid--guttersXl > .Grid-cell {
     padding: 2em 0 0 2em;
   }
-  
-  @media {
-    .small-Grid--gutters {
-      margin: -1em 0 1em -1em;
-    }
-    .small-Grid--gutters > .Grid-cell {
-      padding: 1em 0 0 1em;
-    }
-    .small-Grid--guttersLg {
-      margin: -1.5em 0 1.5em -1.5em;
-    }
-    .small-Grid--guttersLg > .Grid-cell {
-      padding: 1.5em 0 0 1.5em;
-    }
-    .small-Grid--guttersXl {
-      margin: -2em 0 2em -2em;
-    }
-    .small-Grid--guttersXl > .Grid-cell {
-      padding: 2em 0 0 2em;
-    }
+}
+
+@media (min-width: 500px) {
+  .med-Grid--gutters {
+    margin: -1em 0 1em -1em;
   }
-  
-  @media (min-width: 500px) {
-    .med-Grid--gutters {
-      margin: -1em 0 1em -1em;
-    }
-    .med-Grid--gutters > .Grid-cell {
-      padding: 1em 0 0 1em;
-    }
-    .med-Grid--guttersLg {
-      margin: -1.5em 0 1.5em -1.5em;
-    }
-    .med-Grid--guttersLg > .Grid-cell {
-      padding: 1.5em 0 0 1.5em;
-    }
-    .med-Grid--guttersXl {
-      margin: -2em 0 2em -2em;
-    }
-    .med-Grid--guttersXl > .Grid-cell {
-      padding: 2em 0 0 2em;
-    }
+  .med-Grid--gutters > .Grid-cell {
+    padding: 1em 0 0 1em;
   }
-  
-  @media (min-width: 800px) {
-    .large-Grid--gutters {
-      margin: -1em 0 1em -1em;
-    }
-    .large-Grid--gutters > .Grid-cell {
-      padding: 1em 0 0 1em;
-    }
-    .large-Grid--guttersLg {
-      margin: -1.5em 0 1.5em -1.5em;
-    }
-    .large-Grid--guttersLg > .Grid-cell {
-      padding: 1.5em 0 0 1.5em;
-    }
-    .large-Grid--guttersXl {
-      margin: -2em 0 2em -2em;
-    }
-    .large-Grid--guttersXl > .Grid-cell {
-      padding: 2em 0 0 2em;
-    }
+  .med-Grid--guttersLg {
+    margin: -1.5em 0 1.5em -1.5em;
   }
+  .med-Grid--guttersLg > .Grid-cell {
+    padding: 1.5em 0 0 1.5em;
+  }
+  .med-Grid--guttersXl {
+    margin: -2em 0 2em -2em;
+  }
+  .med-Grid--guttersXl > .Grid-cell {
+    padding: 2em 0 0 2em;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-Grid--gutters {
+    margin: -1em 0 1em -1em;
+  }
+  .large-Grid--gutters > .Grid-cell {
+    padding: 1em 0 0 1em;
+  }
+  .large-Grid--guttersLg {
+    margin: -1.5em 0 1.5em -1.5em;
+  }
+  .large-Grid--guttersLg > .Grid-cell {
+    padding: 1.5em 0 0 1.5em;
+  }
+  .large-Grid--guttersXl {
+    margin: -2em 0 2em -2em;
+  }
+  .large-Grid--guttersXl > .Grid-cell {
+    padding: 2em 0 0 2em;
+  }
+}
+
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen {
+
+  .Grid {
+    padding: 0 1rem;
+  }
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 800px) {
+
+
+  .Grid {
+    padding: 0 2rem;
+  }
+
+}

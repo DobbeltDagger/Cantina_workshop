@@ -95,22 +95,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.95em; /* 1em; /* 1.05em; */
   font-family: 'menuettoregular';
   font-weight: 400;
-  letter-spacing: 0.035em;
-  /* border: 1px solid green; */
+  letter-spacing: 0.06em; /* 0.035em; */
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin: 0px 0px 1.65rem 0px;
 }
 h2.centered {
   text-align: center;
-  border-bottom: 1px dashed var(--main-text-color);
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
+  line-height: 1em; /* 0.95em; 1.05em; */
 }
 p {
   margin: 0px 0px 1rem 0px;
@@ -123,17 +123,12 @@ p {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  /* background: url(/assets/images/Baggrund_FRONT.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain; /* cover; /* contain; */
 }
 #pageWrapper::after {
   content: "";
   clear: both;
   display: table;
 }
-
 
 /* front page bg */
 .bgWrapper {
@@ -165,7 +160,6 @@ header #logoWrapper {
   transform: translate(-50%, -50%);
   max-height: 10vh;
   width: auto;
-  /* border: 1px solid red; */
 }
 header #logoWrapper a {
   display: block;
@@ -259,7 +253,6 @@ header #logoWrapper a img {
   height: 80vh;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 4rem;
 }
 
 .programWrapper a {
@@ -295,7 +288,7 @@ header #logoWrapper a img {
 
 .belowProgramWrapper .prog {
   /* border: 1px solid pink; */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .belowProgramWrapper p {
   font-size: 18px;
@@ -341,7 +334,8 @@ footer {
   /* border-top: 1px solid var(--main-text-color); */
   display: block;
   text-align: center;
-  padding: 3.5rem 0px 2rem 0px;
+  /* padding: 3.5rem 0px 2rem 0px; */
+  padding: 4rem 0px 2rem 0px;
   margin-top: 2rem;
   background: url(/assets/images/horisontalLine3.png);
   background-position: top center;
@@ -353,12 +347,33 @@ footer::after {
   display: table;
 }
 
+footer .Grid--gutters {
+  margin: -1em 0 0 -1em; /* -1em 0 1em -1em; */
+}
+
+footer .grey {
+  opacity: 0.5;
+}
+
+.footerBar {
+  /* border-top: 1px solid var(--main-text-color); */
+  display: block;
+  text-align: center;
+  /* padding: 3.5rem 0px 2rem 0px; */
+  padding: 2rem 0px 2rem 0px;
+  background: url(/assets/images/horisontalLine_tilt.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  opacity: 0.1;
+}
+
+
 footer ul.footerNav {
   display: inline-block;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  /* border: 1px solid green; */
+  vertical-align: middle; /* yes! */
 }
 
 footer ul.footerNav li {
@@ -370,9 +385,15 @@ footer ul.footerNav li a {
   text-decoration: none;
   font-family: 'menuettoregular';
   color: var(--main-text-color);
-  font-size: 1.25em;
+  
+  font-size: 1.4em;
+  text-transform: none;
+  letter-spacing: 0.0875em;
+  /*
+  font-size: 1.375em;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1275em;
+  */
   font-weight: 700;
 }
 footer ul.footerNav li a:hover {
@@ -387,7 +408,7 @@ footer ul.footerNav li a.activeAnchor {
 footer .menuSpacer {
   display: inline-block;
   width: 4rem;
-  height: 2rem;
+  height: 2em;
 }
 
 /* footer icons */
@@ -396,19 +417,47 @@ footer ul.footerIcons {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  /* border: 1px solid green; */
 }
 footer ul.footerIcons li {
   display: inline-block;
   margin: 0px 1rem;
 }
 
-footer img.supportLogo {
-  height: 2rem;
-  width: auto;
-  vertical-align: middle;
+
+footer img {
+  image-rendering: -webkit-optimize-contrast;
+  /* image-rendering: crisp-edges; */
 }
 
+footer img.iconLogo {
+  height: 28px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0px 0px; /* 0.75rem; */
+  /* border: 1px solid red; */
+}
+
+
+footer img.cantinaLogo {
+  height: 21px;
+  width: auto;
+  vertical-align: baseline; /* middle; */
+  margin: 0px 0px; /* 0px 0.5rem; */
+}
+
+footer img.supportLogo {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0px 0.75rem;
+}
+
+footer img.supportTallLogo {
+  height: 48px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0px 0.75rem;
+}
 
 
 
@@ -425,6 +474,7 @@ footer img.supportLogo {
 
   .programWrapper {
     height: auto;
+    margin-bottom: 2rem;
   }
 
   /* udstillinger */
@@ -451,6 +501,7 @@ footer img.supportLogo {
 
   .programWrapper {
     height: 80vh;
+    margin-bottom: 5rem;
   }
 
 

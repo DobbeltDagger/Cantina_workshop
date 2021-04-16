@@ -21,7 +21,7 @@
       <!-- overskrift -->
       <div class="Grid Grid--gutters Grid--full large-Grid--fit">
         <div class="Grid-cell">
-          <h2>Upcoming</h2>
+          <h2 class='centered'>Upcoming</h2>
         </div>
       </div>
 
@@ -32,9 +32,7 @@
           <div class="Grid-cell">
             {% for prog in collections.upcomingProgram | reverse %}
               <div class='prog'>
-                <a href='{{ prog.data.link }}'>
-                  <h3>{{ prog.data.title }} &rarr;</h3>
-                </a>
+                <h3><a href='{{ prog.data.link }}'>{{ prog.data.title }}</a> &rarr;</h3>
                 {{ prog.data.content | safe }}
               </div>
             {% endfor %}
