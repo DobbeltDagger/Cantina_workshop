@@ -80,7 +80,7 @@ body {
   line-height: 1.375em;
   margin: 0px;
   padding: 0em;
-  /* height: 100%; */ /* SCROLL ONLY WORKS WITH THIS OFF */
+  /* height: 100%; */ /* JS SCROLL ONLY WORKS WITH THIS OFF */
   overflow-x: hidden;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;  
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.95em; /* 1em; /* 1.05em; */
   font-family: 'menuettoregular';
   font-weight: 400;
-  letter-spacing: 0.06em; /* 0.035em; */
+  letter-spacing: 0.0575em; /* 0.06em; /* 0.035em; */
 }
 h1 {
   font-size: 5rem;
@@ -145,52 +145,6 @@ p {
   z-index: -1;
 }
 
-
-/* HEADER ************************************* */
-header {
-  display: block;
-  position: relative;
-  height: 20vh; /* calc(15vh + 4rem); */
-}
-/* center header */
-header #logoWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-height: 10vh;
-  width: auto;
-}
-header #logoWrapper a {
-  display: block;
-}
-header #logoWrapper a img {
-  display: block;
-  margin: 0px;
-  width: auto;
-  max-height: 10vh;
-}
-
-/* navIcon */
-#navIconWrapper {
-  position: fixed;
-  right: 2.5rem; /* 1rem; */
-  top: 2.5rem;
-  max-height: 10vh;
-  width: auto;
-  text-align: right;
-  /* border: 1px solid red; */
-  z-index: 2;
-}
-
-#navIconWrapper img {
-  max-height: 10vh;
-  width: auto;
-}
-
-#showScroll {
-  opacity: 0.25;
-}
 
 
 /* ************************************************************************ */
@@ -472,6 +426,51 @@ footer img.supportTallLogo {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media screen {
 
+  header {
+    display: block;
+    position: relative;
+    height: auto; /* 20vh; */
+    padding: 1rem;
+  }
+
+  header #logoWrapper {
+    position: relative; /* absolute; */
+    top: auto; /* 50%; */
+    left: auto; /* 50%; */
+    transform: none; /* translate(-50%, -50%); */
+    max-height: 2rem; /* 36px; /* 10vh; */
+    width: auto;
+  }
+  header #logoWrapper a {
+    display: inline-block;
+  }
+  header #logoWrapper a img {
+    display: block;
+    margin: 0px;
+    width: auto;
+    max-height: 2rem; /* 36px; /* 10vh; */
+  }  
+
+  #navIconWrapper {
+    position: fixed;
+    right: 0px; /* 1rem; /* 2.5rem; */
+    top: 0px; /*  0.5rem; /* 2.5rem; */
+    max-height: 3rem; /* 36px; /* 10vh; */
+    width: auto;
+    text-align: right;
+    z-index: 2;
+  }
+
+  #navIconWrapper img {
+    max-height: 4rem; /* 36px; /* 10vh; */
+    width: auto;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+
+
+
+  /* program */
   .programWrapper {
     height: auto;
     margin-bottom: 2rem;
@@ -499,11 +498,50 @@ footer img.supportTallLogo {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 800px) {
 
+
+  /* Header */
+  header {
+    height: 20vh;
+    padding: 0px;
+  }
+  header #logoWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 10vh;
+    width: auto;
+  }
+  header #logoWrapper a {
+    display: block;
+  }  
+  header #logoWrapper a img {
+    max-height: 10vh;
+  }
+
+  /* navicon */
+  #navIconWrapper {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 20vh;
+    max-height: none;
+  }
+  #navIconWrapper img {
+    position: relative;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    max-height: 10vh;
+    width: auto;
+    padding: 0px; /* important */
+  }
+
+  /* program */
   .programWrapper {
     height: 80vh;
     margin-bottom: 5rem;
   }
-
 
   /* udstillinger */
   .udstillingerWrapper .udst {
