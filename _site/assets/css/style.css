@@ -116,6 +116,11 @@ p {
   margin: 0px 0px 1rem 0px;
 }
 
+/* for long links with no spaces: */
+a {
+  word-break: break-all;
+}
+
 
 /* ********************************************** */
 
@@ -284,136 +289,6 @@ p {
 
 /* ************************************************************************************* */
 
-footer {
-  /* border-top: 1px solid var(--main-text-color); */
-  display: block;
-  text-align: center;
-  /* padding: 3.5rem 0px 2rem 0px; */
-  padding: 4rem 0px 2rem 0px;
-  margin-top: 2rem;
-  background: url(/assets/images/horisontalLine3.png);
-  background-position: top center;
-  background-repeat: repeat-x;
-}
-footer::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-footer .Grid--gutters {
-  margin: -1em 0 0 -1em; /* -1em 0 1em -1em; */
-}
-
-footer .grey {
-  opacity: 0.5;
-}
-
-.footerBar {
-  /* border-top: 1px solid var(--main-text-color); */
-  display: block;
-  text-align: center;
-  /* padding: 3.5rem 0px 2rem 0px; */
-  padding: 2rem 0px 2rem 0px;
-  background: url(/assets/images/horisontalLine_tilt.png);
-  background-position: center;
-  background-repeat: repeat-x;
-  opacity: 0.1;
-}
-
-
-footer ul.footerNav {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  vertical-align: middle; /* yes! */
-}
-
-footer ul.footerNav li {
-  display: inline-block;
-  margin: 0px 1rem;
-}
-
-footer ul.footerNav li a {
-  text-decoration: none;
-  font-family: 'menuettoregular';
-  color: var(--main-text-color);
-  
-  font-size: 1.4em;
-  text-transform: none;
-  letter-spacing: 0.0875em;
-  /*
-  font-size: 1.375em;
-  text-transform: uppercase;
-  letter-spacing: 0.1275em;
-  */
-  font-weight: 700;
-}
-footer ul.footerNav li a:hover {
-  text-decoration: underline;
-}
-
-/* active link */
-footer ul.footerNav li a.activeAnchor {
-  text-decoration: line-through;
-}
-
-footer .menuSpacer {
-  display: inline-block;
-  width: 4rem;
-  height: 2em;
-}
-
-/* footer icons */
-footer ul.footerIcons {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-footer ul.footerIcons li {
-  display: inline-block;
-  margin: 0px 1rem;
-}
-
-
-footer img {
-  image-rendering: -webkit-optimize-contrast;
-  /* image-rendering: crisp-edges; */
-}
-
-footer img.iconLogo {
-  height: 28px;
-  width: auto;
-  vertical-align: middle;
-  margin: 0px 0px; /* 0.75rem; */
-  /* border: 1px solid red; */
-}
-
-
-footer img.cantinaLogo {
-  height: 21px;
-  width: auto;
-  vertical-align: baseline; /* middle; */
-  margin: 0px 0px; /* 0px 0.5rem; */
-}
-
-footer img.supportLogo {
-  height: 30px;
-  width: auto;
-  vertical-align: middle;
-  margin: 0px 0.75rem;
-}
-
-footer img.supportTallLogo {
-  height: 48px;
-  width: auto;
-  vertical-align: middle;
-  margin: 0px 0.75rem;
-}
-
-
 
 /* ***************************************************************************************************************** */
 /* ***************************************************************************************************************** */
@@ -467,9 +342,6 @@ footer img.supportTallLogo {
     padding: 0.5rem 1rem 0.5rem 0.5rem;
   }
 
-
-
-
   /* program */
   .programWrapper {
     height: auto;
@@ -481,6 +353,128 @@ footer img.supportTallLogo {
     flex: 0 0 100%;
   }
 
+
+  /* footer */
+  footer {
+    display: block;
+    text-align: center;
+    padding: 2rem 0px 1rem 0px;
+    margin-top: 0px; /* 2rem; */
+    background: url(/assets/images/horisontalLine3.png);
+    background-position: top center;
+    background-repeat: repeat-x;
+  }
+  footer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  footer .Grid--gutters {
+    margin: -1em 0 0 -1em; /* -1em 0 1em -1em; */
+  }
+  
+  footer .grey {
+    opacity: 0.5;
+  }
+  
+  .footerBar {
+    /* border-top: 1px solid var(--main-text-color); */
+    display: block;
+    text-align: center;
+    /* padding: 3.5rem 0px 2rem 0px; */
+    padding: 2rem 0px 2rem 0px;
+    background: url(/assets/images/horisontalLine_tilt.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    opacity: 0.1;
+  }
+  
+  
+  footer ul.footerNav {
+    display: block; /* inline-block; */
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle; /* yes! */
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+  }
+  
+  footer ul.footerNav li {
+    display: block; /* inline-block; */
+    margin: 0px 1rem;
+  }
+  
+  footer ul.footerNav li a {
+    text-decoration: none;
+    font-family: 'menuettoregular';
+    color: var(--main-text-color);
+    font-size: 1.4em;
+    line-height: 2.25rem;
+    text-transform: none;
+    letter-spacing: 0.0875em;
+    font-weight: 700;
+  }
+  footer ul.footerNav li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* active link */
+  footer ul.footerNav li a.activeAnchor {
+    text-decoration: line-through;
+  }
+  
+
+  footer .menuSpacer {
+    display: none; /* inline-block; */
+  }
+
+  /* footer icons */
+  footer ul.footerIcons {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  footer ul.footerIcons li {
+    display: inline-block;
+    margin: 0px 1rem;
+  }
+  
+  
+  footer img {
+    image-rendering: -webkit-optimize-contrast;
+    /* image-rendering: crisp-edges; */
+  }
+  
+  footer img.iconLogo {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0px 0px; /* 0.75rem; */
+    /* border: 1px solid red; */
+  }
+  footer img.cantinaLogo {
+    height: 21px;
+    width: auto;
+    vertical-align: baseline; /* middle; */
+    margin: 0px 0px; /* 0px 0.5rem; */
+  }
+  footer img.supportLogo {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0px 0.75rem 0.75rem 0.75rem;
+  }
+  footer img.supportTallLogo {
+    height: 48px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0px 0.75rem 0.75rem 0.75rem;
+  }
+  
+  
 }
 
 
@@ -548,6 +542,48 @@ footer img.supportTallLogo {
     flex: 0 0 33.3333%;
   }
 
+
+  footer {
+    padding: 4rem 0px 2rem 0px;
+    margin-top: 2rem;
+  }
+
+  footer ul.footerNav {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle; /* yes! */
+    margin-bottom: 0px;
+  }  
+
+  footer ul.footerNav li {
+    display: inline-block;
+    margin: 0px 1rem;
+  }
+  footer ul.footerNav li a {
+    line-height: normal; /* 2.25rem; */
+  }
+
+    
+  footer .menuSpacer {
+    display: inline-block;
+    width: 4rem;
+    height: 2em;
+  }
+    
+  footer img.supportLogo {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0px 0.75rem;
+  }
+  footer img.supportTallLogo {
+    height: 48px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0px 0.75rem;
+  }  
 }
 
 
