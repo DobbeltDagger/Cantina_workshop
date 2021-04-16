@@ -10,7 +10,7 @@ belowMainImage:
 date: 2008-01-01
 ---
 
-<h2><b>Her kommer en overskrift</b></h2>
+<!-- <h2><b>Her kommer en overskrift</b></h2> -->
 
 Her kommer der noget tekst for denne udstilling!  
 

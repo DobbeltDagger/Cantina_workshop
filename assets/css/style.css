@@ -290,12 +290,28 @@ header #logoWrapper a img {
   display: block;
   width: 100%;
   padding: 0px; /* 2rem; */
+  margin-bottom: 0px;
+}
+
+.belowProgramWrapper .prog {
+  /* border: 1px solid pink; */
+  margin-bottom: 2rem;
 }
 .belowProgramWrapper p {
   font-size: 18px;
   line-height: 26px;
 }
 
+.belowProgramWrapper a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+.belowProgramWrapper a:hover {
+  text-decoration: underline;
+}
+
+
+/* ******************************************************************************** */
 /* inside grid */
 .inside {
   max-width: 1280px;
@@ -305,10 +321,16 @@ header #logoWrapper a img {
 }
 
 .insideCol {
-  max-width: 600px;
+  max-width: 640px;
   /* border: 1px solid green; */
   margin: 0px auto;
   padding: 0px; /* 0px 1rem; */
+}
+
+.insideCol img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
 }
 
 
@@ -316,11 +338,14 @@ header #logoWrapper a img {
 /* ************************************************************************************* */
 
 footer {
-  border-top: 1px solid var(--main-text-color);
+  /* border-top: 1px solid var(--main-text-color); */
   display: block;
-  /* background-color: pink; */
   text-align: center;
-  padding: 3rem 0px 2rem;
+  padding: 3.5rem 0px 2rem 0px;
+  margin-top: 2rem;
+  background: url(/assets/images/horisontalLine3.png);
+  background-position: top center;
+  background-repeat: repeat-x;
 }
 footer::after {
   content: "";
@@ -329,6 +354,7 @@ footer::after {
 }
 
 footer ul.footerNav {
+  display: inline-block;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
@@ -357,6 +383,33 @@ footer ul.footerNav li a:hover {
 footer ul.footerNav li a.activeAnchor {
   text-decoration: line-through;
 }
+
+footer .menuSpacer {
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+
+/* footer icons */
+footer ul.footerIcons {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid green; */
+}
+footer ul.footerIcons li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+footer img.supportLogo {
+  height: 2rem;
+  width: auto;
+  vertical-align: middle;
+}
+
+
 
 
 /* ***************************************************************************************************************** */

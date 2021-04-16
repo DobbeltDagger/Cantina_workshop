@@ -2,7 +2,6 @@
 
 {% block mainContent %}
 
-
   <!-- bg -->
   <div class='bgWrapper'></div>
 
@@ -29,51 +28,46 @@
       <!-- grid, upcoming program items -->
       <div class="belowProgramWrapper">
 
-          <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-            <div class="Grid-cell">
-
+        <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+          <div class="Grid-cell">
             {% for prog in collections.upcomingProgram | reverse %}
-              
-                <a href='{{ prog.data.link }}'><h3>{{ prog.data.title }} &rarr;</h3></a>
+              <div class='prog'>
+                <a href='{{ prog.data.link }}'>
+                  <h3>{{ prog.data.title }} &rarr;</h3>
+                </a>
                 {{ prog.data.content | safe }}
-                <!-- <p><a href='{{ prog.data.link }}'>link</a></p> -->
-              
+              </div>
             {% endfor %}
-            </div>
-
           </div>
+        </div>
 
       </div>
 
-
       <!-- overskrift -->
+      <!-- 
       <div class="Grid Grid--gutters Grid--full large-Grid--fit">
         <div class="Grid-cell">
           <h2>Previous</h2>
         </div>
       </div>
 
-
-      <!-- grid, upcoming program items -->
       <div class="belowProgramWrapper">
 
-          <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-            <div class="Grid-cell">
+        <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+          <div class="Grid-cell">
             {% for prog in collections.previousProgram | reverse %}
-              
-                <a href='{{ prog.data.link }}'><h3>{{ prog.data.title }}</h3></a>
-                {{ prog.data.content | safe }}
-                <!-- <p><a href='{{ prog.data.link }}'>link</a></p> -->
-              
+              <a href='{{ prog.data.link }}'>
+                <h3>{{ prog.data.title }} &rarr;</h3>
+              </a>
+              {{ prog.data.content | safe }}
             {% endfor %}
-            </div>
-
           </div>
+        </div>
 
       </div>
+      -->
 
-      
-    </div> <!-- eof inside -->
+    </div> <!-- eof insideColumn -->
 
   </div> <!-- eof belowProgramWrapper -->
 
