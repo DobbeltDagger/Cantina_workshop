@@ -8,10 +8,15 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <script src='/assets/js/functions.js'></script>
+  <!-- <script src='/assets/js/newMasonry.js'></script> -->
+  <!-- <link href='/assets/js/wa-mediabox.min.js' /> -->
+  <script src='/assets/js/wa-mediabox.js'></script>    
   <!-- <link href="/assets/css/newMasonry.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/Grid.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href='/assets/css/wa-mediabox.css' rel="stylesheet" />
 </head>
 
 <body>
@@ -78,40 +83,38 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
   </div>
 
   <!-- scripts -->
-  <script src='/assets/js/functions.js'></script>
-  <!-- <script src='/assets/js/newMasonry.js'></script> -->
+
   <script>
     // all is loaded
     window.addEventListener("DOMContentLoaded", function() {
 
+
+      // nav icon click listener
       const navIcon = document.getElementById("navIconBtn");
       navIcon.addEventListener('click', function(e) {
-
         e.preventDefault();
-        // console.log("navIcon was clicked");
-
-        /*
-        const scElm = document.getElementById('pageWrapper');
-        console.log("scElm:", scElm);
-        // get height of page scroll
-        const scPos = getScrollPosition();
-        console.log("scPos:", scPos);
-        */
-
         const docHeight = getDocHeight();
         console.log("docHeight:", docHeight);
-
         scrollToX(docHeight);
       })
 
-      // can i do this here?
+      // Translate - set before any binding
+      /*
+      WAMediaBox.lang = {
+        prev: "Previous",
+        next: "Next",
+        close: "Close",
+        openInNew: "Open in new window"
+      };
+      */
+
+      // Bind all child elements
+      // WAMediaBox.bindAll(document.querySelector(".lightboxWrapper"));
+
+
+      // put class and target on external links
       linkopener(true);
 
-      /*
-      window.addEventListener('scroll', function() {
-        document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
-      });
-      */
     })
   </script>
 </body>
