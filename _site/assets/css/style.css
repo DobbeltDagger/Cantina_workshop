@@ -95,8 +95,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.95em; /* 1em; /* 1.05em; */
   font-family: 'menuettoregular';
   font-weight: 400;
-  letter-spacing: 0.0575em; /* 0.06em; /* 0.035em; */
+  letter-spacing: 0.05125em; /* 0.0575em; /* 0.06em; /* 0.035em; */
 }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  word-break: normal; /* break-all; */
+}
+
 h1 {
   font-size: 5rem;
 }
