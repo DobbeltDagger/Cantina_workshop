@@ -11,12 +11,17 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
   <script src='/assets/js/functions.js'></script>
   <!-- <script src='/assets/js/newMasonry.js'></script> -->
   <!-- <link href='/assets/js/wa-mediabox.min.js' /> -->
-  <script src='/assets/js/wa-mediabox.js'></script>    
+  <script src='/assets/js/wa-mediabox.js'></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="/assets/js/swiper-bundle.min.js"></script>  
   <!-- <link href="/assets/css/newMasonry.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/Grid.css" rel="stylesheet" />
   <link href="/assets/css/style.css" rel="stylesheet" />
   <link href='/assets/css/wa-mediabox.css' rel="stylesheet" />
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -108,8 +113,27 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
       };
       */
 
-      // Bind all child elements
-      // WAMediaBox.bindAll(document.querySelector(".lightboxWrapper"));
+      const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical', // 'horisontal', // 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
 
 
       // put class and target on external links

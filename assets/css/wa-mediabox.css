@@ -38,9 +38,9 @@
 	height: 0;
 	margin-left: 0;
 	margin-top: 0;
-	background: rgba(224, 255, 64, 0.96); /* #ffffff; */
+	background: rgba(224, 255, 64, 1.0); /* #ffffff; */
 	/* box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.5); */
-  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1);
 	transition: width 0.5s, height 0.5s, margin 0.5s;
 	-webkit-transition: width 0.5s, height 0.5s, margin 0.5s;
 }
@@ -80,7 +80,8 @@
 	border: 0px none;
 	border-radius: 36px;
 	cursor: pointer;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
 	transition: background 0.2s, box-shadow 0.2s;
 	-webkit-transition: background 0.2s, box-shadow 0.2s;
 }
@@ -210,14 +211,16 @@
 .wa-mediabox-next svg {
 	width: 64px;
 	height: 64px;
-	fill: #999999;
+	fill: black; /* #999999; */
+  opacity: 0.8;
 	transition: fill 0.2s;
 	-webkit-transition: fill 0.2s;
 }
 
 .wa-mediabox-prev:hover svg,
 .wa-mediabox-next:hover svg {
-	fill: #ffffff;
+	/* fill: #ffffff; */
+  opacity: 1.0;
 }
 
 @media all and (max-width: 479px) {
@@ -276,6 +279,7 @@
 	height: 100%;
     opacity: 1;
     border-color: black; /* #2196F3; */
+    opacity: 0.8;
     -webkit-animation: wa-mediabox-preloader-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
     animation: wa-mediabox-preloader-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
     box-sizing: inherit;
