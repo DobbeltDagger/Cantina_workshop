@@ -11,6 +11,7 @@
 .swiper-container {
   width: 100%; /*  calc(640px - 4rem); /* 100%; */
   height: auto; /* 100%; /* auto; */
+  margin-bottom: 2rem;
 }
 
 .swiper-slide {
@@ -43,6 +44,52 @@
   width: 100%;
   opacity: 0.8;
   font-size: 17px;
+}
+
+
+/* lightbox styling */
+.lightboxWrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -0.5rem -0.5rem 2rem -0.5rem;
+  width: auto;
+}
+.lightboxWrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.lightboxWrapper a {
+  flex: 0 0 33.3333%;
+  /* margin: 1rem 0 0 1rem; */
+  padding: 0.5rem;
+}
+.lightboxWrapper a img {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+
+/* gallery wrapper */
+.galleryWrapper {
+  margin-bottom: 2rem;
+}
+.galleryWrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.galleryWrapper img {
+  display: block;
+  float: left;
+  margin-bottom: 1rem;
 }
 
 

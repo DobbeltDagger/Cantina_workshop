@@ -1,0 +1,42 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+
+  <!-- bg -->
+  <!-- <div class='bgWrapper'></div> -->
+
+
+  {# content | safe #}
+
+  <!-- øvrige program-punkter herunder?? -->
+  <div class='belowProgramWrapper'>
+
+    <div class='insideCol'>
+
+      <!-- overskrift -->
+      <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+        <div class="Grid-cell">
+          <h2 class='centered'>Previous</h2>
+        </div>
+      </div>
+
+      <div class="belowProgramWrapper">
+
+        <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+          <div class="Grid-cell">
+            {% for prog in collections.previousProgram | reverse %}
+              <div class='prog'>
+                <h3><a href='{{ prog.data.link }}'>{{ prog.data.title }}</a> &rarr;</h3>
+                {{ prog.data.content | safe }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- eof insideColumn -->
+
+  </div> <!-- eof belowProgramWrapper -->
+
+{% endblock mainContent %}

@@ -24,8 +24,11 @@
     <!-- GRID for images below main content -->
     <div class="Grid Grid--gutters Grid--full large-Grid--fit">
       <div class='Grid-cell'>
-        <h2>Her kommer de andre billeder</h2>
-        <img src='{{ thumbUrl }}'/>
+        <div class='galleryWrapper'>
+          {% for prog in gallery %}
+            <img src='{{ prog }}'/>
+          {% endfor %}
+        </div>
       </div>
     </div>
 
@@ -52,6 +55,29 @@
 
   </div>
 
+
+  <!-- LIGHTBOx demo -->
+  <div class='insideCol'>
+    
+    <div class='lightboxWrapper'>
+      <a href="/assets/images/lightboxDemo/image1.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
+        <img src="/assets/images/lightboxDemo/image1-thumb.jpg" alt="Image" />
+      </a>
+      <a href="/assets/images/lightboxDemo/image2.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
+        <img src="/assets/images/lightboxDemo/image2-thumb.jpg" alt="Image" />
+      </a>
+      <a href="/assets/images/lightboxDemo/image3.png" data-mediabox="my-gallery-name" data-title="Sample image">
+        <img src="/assets/images/lightboxDemo/image3-thumb.png" alt="Image" />
+      </a>
+      <a href="/assets/images/lightboxDemo/image2.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
+        <img src="/assets/images/lightboxDemo/image2-thumb.jpg" alt="Image" />
+      </a>
+      <a href="/assets/images/lightboxDemo/image3.png" data-mediabox="my-gallery-name" data-title="Sample image">
+        <img src="/assets/images/lightboxDemo/image3-thumb.png" alt="Image" />
+      </a>      
+    </div>
+
+  </div>
 
 
 {% endblock mainContent %}
