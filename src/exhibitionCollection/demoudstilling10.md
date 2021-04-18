@@ -8,6 +8,16 @@ gallery:
  - '/assets/images/udstillingerStoreBilleder/10.jpg'
  - '/assets/images/udstillingerStoreBilleder/1.jpg'
  - '/assets/images/udstillingerStoreBilleder/2.jpg'
+slideshow:
+ - '/assets/images/udstillingerStoreBilleder/10.jpg'
+ - '/assets/images/udstillingerStoreBilleder/1.jpg'
+ - '/assets/images/udstillingerStoreBilleder/2.jpg'
+lightbox:
+ - '/assets/images/udstillingerStoreBilleder/10.jpg'
+ - '/assets/images/udstillingerStoreBilleder/1.jpg'
+ - '/assets/images/udstillingerStoreBilleder/2.jpg'
+ - '/assets/images/udstillingerStoreBilleder/4.jpg'
+ - '/assets/images/udstillingerStoreBilleder/5.jpg'
 ---
 
 Her kommer der noget tekst for denne udstilling!  

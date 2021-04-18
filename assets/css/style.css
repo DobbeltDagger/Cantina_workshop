@@ -78,7 +78,7 @@
 
 /* gallery wrapper */
 .galleryWrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 0px; /* 2rem; */
 }
 .galleryWrapper::after {
   content: "";

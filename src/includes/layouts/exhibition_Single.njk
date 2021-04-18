@@ -16,35 +16,26 @@
       </div>
     </div>
 
-    <!-- spacer -->
-    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-      <div class='Grid-cell'><p>&nbsp;</p></div>
-    </div>
-
-    <!-- GRID for images below main content -->
-    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
-      <div class='Grid-cell'>
-        <div class='galleryWrapper'>
-          {% for prog in gallery %}
-            <img src='{{ prog }}'/>
-          {% endfor %}
+    <!-- gallery -->
+    {% if gallery.length %}
+      <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+        <div class='Grid-cell'>
+          <div class='galleryWrapper'>
+            {% for img in gallery %}
+              <img src='{{ img }}'/>
+            {% endfor %}
+          </div>
         </div>
       </div>
-    </div>
+    {% endif %}
 
-  </div> <!-- eof grid -->
-
-
-  <!-- Swiper -->
-  <div class='insideCol'>
-
+    <!-- slideshow, swiperjs-->
+    {% if slideshow.length %}
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src='/assets/images/swiperDemo/1.jpg' /></div>
-          <div class="swiper-slide"><img src='/assets/images/swiperDemo/2.jpg' /></div>
-          <div class="swiper-slide"><img src='/assets/images/swiperDemo/3.jpg' /></div>
-          <div class="swiper-slide"><img src='/assets/images/swiperDemo/4.jpg' /></div>
-          <div class="swiper-slide"><img src='/assets/images/swiperDemo/5.jpg' /></div>
+          {% for img in slideshow %}
+            <div class="swiper-slide"><img src='{{ img }}' /></div>
+          {% endfor %}
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -52,32 +43,21 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+    {% endif %}
 
-  </div>
+    <!-- lightbox -->
+    {% if lightbox.length %}
+      <div class='lightboxWrapper'>
+        {% for img in lightbox %}
+          <a href="{{ img }}" data-mediabox="{{ title }} gallery" data-title="{{ title }}">
+            <img src="{{ img }}" alt="{{ title }}" />
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}    
 
 
-  <!-- LIGHTBOx demo -->
-  <div class='insideCol'>
-    
-    <div class='lightboxWrapper'>
-      <a href="/assets/images/lightboxDemo/image1.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
-        <img src="/assets/images/lightboxDemo/image1-thumb.jpg" alt="Image" />
-      </a>
-      <a href="/assets/images/lightboxDemo/image2.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
-        <img src="/assets/images/lightboxDemo/image2-thumb.jpg" alt="Image" />
-      </a>
-      <a href="/assets/images/lightboxDemo/image3.png" data-mediabox="my-gallery-name" data-title="Sample image">
-        <img src="/assets/images/lightboxDemo/image3-thumb.png" alt="Image" />
-      </a>
-      <a href="/assets/images/lightboxDemo/image2.jpg" data-mediabox="my-gallery-name" data-title="Sample image">
-        <img src="/assets/images/lightboxDemo/image2-thumb.jpg" alt="Image" />
-      </a>
-      <a href="/assets/images/lightboxDemo/image3.png" data-mediabox="my-gallery-name" data-title="Sample image">
-        <img src="/assets/images/lightboxDemo/image3-thumb.png" alt="Image" />
-      </a>      
-    </div>
-
-  </div>
+  </div> <!-- eof grid -->
 
 
 {% endblock mainContent %}
