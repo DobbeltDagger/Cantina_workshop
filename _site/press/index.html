@@ -17,11 +17,12 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
   <!-- <link href="/assets/css/newMasonry.css" rel="stylesheet" /> -->
   <link href="/assets/css/normalize.css" rel="stylesheet" />
   <link href="/assets/css/Grid.css" rel="stylesheet" />
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href='/assets/css/wa-mediabox.css' rel="stylesheet" />
-  <!-- swiper -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
   <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+  <link href='/assets/css/wa-mediabox.css' rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  
+  <!-- swiper -->
+  
 </head>
 
 <body>
@@ -134,6 +135,21 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
       };
       */
 
+      var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // 'vertical',
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      /*
       const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'vertical', // 'horisontal', // 'vertical',
@@ -155,6 +171,7 @@ CANTINA er baseret i lokaler på Godsbanen i Aarhus C. / CANTINA is an artist-ru
           el: '.swiper-scrollbar',
         },
       });
+      */
 
 
       // put class and target on external links
