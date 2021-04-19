@@ -1,5 +1,6 @@
 ---
 title: "Demoudstilling #2"
+artists: 'Cantina artist #1'
 description: "Her kommer den anden udstillings tekst!"
 imgUrl: '/assets/images/udstillingerStoreBilleder/2.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/2_thumb.jpg'
