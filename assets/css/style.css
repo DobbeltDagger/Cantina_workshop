@@ -696,13 +696,13 @@ a:hover {
     height: 30px;
     width: auto;
     vertical-align: middle;
-    margin: 0px 0.75rem;
+    margin: 0px 0.8rem; /* 0 0.75rem; */
   }
   footer img.supportTallLogo {
     height: 48px;
     width: auto;
     vertical-align: middle;
-    margin: 0px 0.75rem;
+    margin: 0px 0.8rem; /* 0 0.75rem; */
   }  
 }
 
