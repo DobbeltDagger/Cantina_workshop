@@ -27,7 +27,7 @@ The exhibition is supported by Kirsten & Gunnar Fonden, Statens Kunstfond and Aa
 The opening will take place on the 30th of april in respect of the covid restrictions and in the presence of the artists.  
 _  
 
-«WHEN IS THE DEPARTURE ?*
+«WHEN IS THE DEPARTURE ?*  
 Space is the place – nothing like a wilderness or a wasteland though, nor a desert nor a sea, despite the specific quality of sound, these dull continuous layers that can be heard and that may be (or is, how could you even be sure?) the figment of the imagination. Despite even the poet's similarity of planets with islands and harbours. It is the liquid preventing any movement and tolling in the shell of an overburdened skull.
 Space is the place, and it is all the places, the abolition long accepted of anything meant by words you could no longer comprehend, directions you can no longer take, what was once called behind or South, North or low, spreading or West, left or East. It contains all the images that keep dwelling on in an endless scrolling and yet it pertains to them, as they go more imprecise and more dimmed - that is : it is taken for granted that distances grow.  
 Space is the place, it is the center and the margin, and all the distances in-between: infinite fractal series of Rømer parallaxes unfold more universes than a responsive eye can see, more destinations than a solar wind can reach, more stages than any measurement can differentiate.  
@@ -38,7 +38,7 @@ There was a code, a grammar, a language, likely to grip objects, more rarely sen
 
 Space is now my place, I’m home, alone and related to the whole, floating and crashed, exploring and blind, defeated and heroic. Space is my cave and my resurrection. Paradise lost – or glory.  
 
-*You are already on your way. »
+*You are already on your way. »  
 Andreï Tarkovski, Solaris, 1972  
 
 Exhibition text by Jean-Christophe Arcos

@@ -7,7 +7,7 @@
 
   <div class='programWrapper'>
     {% for prog in collections.currentProgram %}
-      <a href='{{ prog.data.link }}'><img src='{{ prog.data.plakat }}'/></a>
+      <a href='{{ prog.data.link }}'><img src='{{ prog.data.plakat }}' alt='{{ prog.data.title }}' title='{{ prog.data.title }}'/></a>
     {% endfor %}
   </div>
 
