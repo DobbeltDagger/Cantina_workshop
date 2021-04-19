@@ -408,9 +408,17 @@ a {
   }
   header #logoWrapper a {
     display: inline-block;
+    font-family: "menuetto";
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 3.125rem; /* 9.75rem; */
+    letter-spacing: 0;
   }
+  header #logoWrapper a:hover {
+    text-decoration: none;
+  }  
   header #logoWrapper a img {
-    display: block;
+    display: inline-block;
     margin: 0px;
     width: auto;
     max-height: 2rem; /* 36px; /* 10vh; */
@@ -594,16 +602,18 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 10vh;
-    width: auto;
+    width: 100%; /* auto; */
+    text-align: center;
   }
   header #logoWrapper a {
     display: block;
-  }  
+    font-size: 9.75rem; /*3.125rem; /* 9.75rem; */  
+  }
   header #logoWrapper a img {
     max-height: 10vh;
   }
 
-  /* navicon */
+  /* navicon */ 
   #navIconWrapper {
     position: fixed;
     top: 0px;
@@ -614,9 +624,9 @@ a {
   #navIconWrapper img {
     position: relative;
     top: 50%;
-    right: 1.5rem;
+    right: 2rem; /* 1.5rem; */
     transform: translateY(-50%);
-    max-height: 10vh;
+    max-height: 13vh; /* 11vh; /* 10vh; */
     width: auto;
     padding: 0px; /* important */
   }
