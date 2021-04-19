@@ -6,7 +6,6 @@
   <!-- https://codepen.io/chriscoyier/pen/WNGQyvX -->
   <!-- 
   <div class="masonryGrid">
-
     {% for udst in collections.udstillingerCollection | reverse %}
       <div class="item udst">
         <div class="content">
@@ -20,19 +19,22 @@
         </div>
       </div>
     {% endfor %}      
-
   </div> --> <!-- eof grid -->
 
   <!-- old school grid -->
   <div class="Grid Grid--gutters Grid--full large-Grid--fit">
     <div class='Grid-cell'>
-
       <h2>Exhibitions</h2>
+    </div>
+  </div>
+
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
 
       <div class='udstillingerWrapper'>
         {% for udst in collections.exhibitionCollection | reverse %}
           <div class='udst'>
-            <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}'></a></div>
+            <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}' alt='{{ udst.data.title }}' title='{{ udst.data.title }}'></a></div>
             <div class='info'>
               <span class='title'>{{ udst.data.title }}</span>
               {{ udst.data.description }}
@@ -40,9 +42,9 @@
             </div>
           </div>
         {% endfor %}
-      </div>
+      </div>  
 
     </div>
-  </div>
+  </div>      
 
 {% endblock mainContent %}

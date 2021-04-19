@@ -22,7 +22,10 @@
         <div class='Grid-cell'>
           <div class='galleryWrapper'>
             {% for img in gallery %}
-              <img src='{{ img }}'/>
+              <div class='imgWrap'>
+                <img src='{{ img.url }}' alt='{{ img.text }}' title='{{ img.text }}'/>
+                {% if img.text %}<div class='caption'>{{ img.text }}</div>{% endif %}
+              </div>
             {% endfor %}
           </div>
         </div>
@@ -34,7 +37,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           {% for img in slideshow %}
-            <div class="swiper-slide"><img src='{{ img }}' /></div>
+            <div class="swiper-slide"><img src='{{ img.url }}' /></div>
           {% endfor %}
         </div>
         <!-- Add Pagination -->
@@ -49,8 +52,8 @@
     {% if lightbox.length %}
       <div class='lightboxWrapper'>
         {% for img in lightbox %}
-          <a href="{{ img }}" data-mediabox="{{ title }} gallery" data-title="{{ title }}">
-            <img src="{{ img }}" alt="{{ title }}" />
+          <a href="{{ img.url }}" data-mediabox="{{ title }} gallery" data-title="{{ img.text }}">
+            <img src="{{ img.url }}" alt="{{ img.text }}" />
           </a>
         {% endfor %}
       </div>

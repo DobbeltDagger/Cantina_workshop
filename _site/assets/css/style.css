@@ -86,10 +86,24 @@
   display: table;
 }
 
-.galleryWrapper img {
+.galleryWrapper .imgWrap {
   display: block;
   float: left;
   margin-bottom: 1rem;
+}
+.galleryWrapper img {
+  display: block;
+  float: left;
+  margin-bottom: 0.375rem;
+}
+
+.galleryWrapper .caption {
+  display: block;
+  float: left;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 0px; /* 1rem; */
+  opacity: 0.82;
 }
 
 
@@ -332,6 +346,7 @@ a {
   display: block;
   width: 100%;
   padding: 0px; /* 2rem; */
+  margin-top: 1rem;
   margin-bottom: 0px;
 }
 
@@ -435,9 +450,9 @@ a {
   }
 
   #navIconWrapper img {
-    max-height: 4rem; /* 36px; /* 10vh; */
+    max-height: 5rem; /* 4rem; /* 36px; /* 10vh; */
     width: auto;
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    padding: 0.25rem 1rem 0.5rem 0.5rem; /* 0.5rem 1rem 0.5rem 0.5rem; */
   }
 
   /* program */
@@ -704,6 +719,17 @@ a {
   /* udstillinger _*/
   .udstillingerWrapper .udst {
     flex: 0 0 20%;
+  }
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 1600px) {
+
+  /* udstillinger _*/
+  .udstillingerWrapper .udst {
+    flex: 0 0 16.6666%;
   }
 
 }

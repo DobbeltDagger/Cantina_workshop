@@ -5,19 +5,52 @@ imgUrl: '/assets/images/udstillingerStoreBilleder/10.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/10_thumb.jpg'
 date: 2010-01-01
 gallery:
- - '/assets/images/udstillingerStoreBilleder/10.jpg'
- - '/assets/images/udstillingerStoreBilleder/1.jpg'
- - '/assets/images/udstillingerStoreBilleder/2.jpg'
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/10.jpg',
+   text: 'Hello there, this is my image caption. Let me put a really long caption in here to see how it looks, when the line breaks'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/1.jpg',
+   text: 'Hello there'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/2.jpg',
+   text: 'this is the image caption'
+ }
 slideshow:
- - '/assets/images/udstillingerStoreBilleder/10.jpg'
- - '/assets/images/udstillingerStoreBilleder/1.jpg'
- - '/assets/images/udstillingerStoreBilleder/2.jpg'
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/10.jpg',
+   text: 'Hello there, this is my image caption. Let me put a really long caption in here to see how it looks, when the line breaks'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/1.jpg',
+   text: 'Hello there'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/2.jpg',
+   text: 'this is the image caption'
+ }
 lightbox:
- - '/assets/images/udstillingerStoreBilleder/10.jpg'
- - '/assets/images/udstillingerStoreBilleder/1.jpg'
- - '/assets/images/udstillingerStoreBilleder/2.jpg'
- - '/assets/images/udstillingerStoreBilleder/4.jpg'
- - '/assets/images/udstillingerStoreBilleder/5.jpg'
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/10.jpg',
+   text: 'Hello there, this is my image caption. Let me put a really long caption in here to see how it looks, when the line breaks'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/1.jpg',
+   text: 'Hello there'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/2.jpg',
+   text: 'this is the image caption'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/4.jpg',
+   text: 'this is the image caption -image number 4!'
+ }
+ - {
+   url: '/assets/images/udstillingerStoreBilleder/5.jpg',
+   text: 'this is the image caption for the 5th image in this lightbox'
+ }
 ---
 
 Her kommer der noget tekst for denne udstilling!  
