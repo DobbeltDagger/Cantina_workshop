@@ -91,7 +91,7 @@
 }
 
 .wa-mediabox-frame .wa-mediabox-close:hover {
-	background: #D32F2F;
+	background: black; /* #D32F2F; */
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -104,7 +104,7 @@
 }
 
 .wa-mediabox-frame .wa-mediabox-close:hover svg {
-	fill: #ffffff;
+	fill: #e0ff40; /* #ffffff; */
 }
 
 /*
@@ -128,7 +128,8 @@
 }
 
 .wa-mediabox-frame.loaded.has-title .wa-mediabox-title {
-	padding: 14px 52px 14px 14px;
+	/* padding: 14px 52px 14px 14px; */
+  padding: 10px 52px 10px 12px;
 	opacity: 1.0;
 }
 

@@ -32,7 +32,7 @@
     <div class='Grid-cell'>
 
       <div class='udstillingerWrapper'>
-        {% for udst in collections.exhibitionCollection | reverse %}
+        {% for udst in collections.exhibition | reverse %}
           <div class='udst'>
             <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}' alt='{{ udst.data.title }}' title='{{ udst.data.title }}'></a></div>
             <div class='info'>
