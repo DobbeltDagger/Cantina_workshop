@@ -21,7 +21,40 @@
     {% endfor %}      
   </div> --> <!-- eof grid -->
 
+    <!-- old school grid -->
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+      <h2>Exhibitions</h2>
+    </div>
+  </div>
+
+  <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+    <div class='Grid-cell'>
+
+      <div class='udstillingerWrapper'>
+        {% for udst in collections.allExhibitions %}
+          <div class='udst'>
+            <div class='img'><a href='{{ udst.url }}'><img src='{{ udst.data.thumbUrl }}' alt='{{ udst.data.title }}' title='{{ udst.data.title }}'></a></div>
+            <div class='info'>
+              {{ udst.data.tags | removeExhibitionFromString }}
+              <span class='title'>{{ udst.data.title }}</span>
+              {{ udst.data.description }}
+              <span class='link'><a href="{{ udst.data.url }}" target="_blank">{{ udst.data.urlTitle }}</a></span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>  
+
+    </div>
+  </div>  
+
+
+
+
+  <!-- *************************************************************************************** -->
+
   <!-- old school grid -->
+  <!-- 
   <div class="Grid Grid--gutters Grid--full large-Grid--fit">
     <div class='Grid-cell'>
       <h2>Exhibitions</h2>
@@ -45,6 +78,7 @@
       </div>  
 
     </div>
-  </div>      
+  </div>
+  -->
 
 {% endblock mainContent %}

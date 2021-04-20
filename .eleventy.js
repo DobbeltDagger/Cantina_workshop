@@ -1,6 +1,7 @@
 const postcss = require("postcss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
+
 // export all this
 module.exports = function(eleventyConfig) {
 
@@ -11,9 +12,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("postCSS", function(code) {
     return postcss([autoprefixer]).process(code).css;
   });
+
+  // making my own nunjucks filter:
+  // https://eszter.space/11ty-njk-filters/
+  eleventyConfig.addNunjucksFilter('removeExhibitionFromString', require('./src/filters/removeExhibitionFromString'))
+
+  // Make a collection from three diff tags:
+  eleventyConfig.addCollection("allExhibitions", function(collection) {
+    const curr = collection.getFilteredByTag("currentExhibition").reverse();
+    const upcom = collection.getFilteredByTag("upcomingExhibition").reverse();
+    const prev = collection.getFilteredByTag("previousExhibition").reverse();
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+    const arr = curr.concat(upcom, prev);
+    return arr;
+  });
   
   /*
   // cant get this to work?
+  // I DONT think this is or - but and.. So post has to have both tags to appear??
   eleventyConfig.addCollection('ResourcePosts', function(collection) {
     console.log("ResourcePosts was hit");
     return collection

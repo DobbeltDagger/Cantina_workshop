@@ -5,9 +5,7 @@ description: "1.05 – 30.05.2021. The show is curated by Jean-Baptiste Janisset
 imgUrl: '/assets/images/udstillingerStoreBilleder/5.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/5_thumb.jpg'
 date: 2005-01-01
-tags:
- - "currentExhibition"
- - "exhibition"
+tags: "currentExhibition"
 eleventyExcludeFromCollections: false
 ---
 

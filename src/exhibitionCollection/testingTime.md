@@ -1,50 +1,12 @@
 ---
-title: 'skabelonExhibition.md'
+title: 'testingTime.md'
 artists: 'Cantina artist #1'
 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices vel magna non sollicitudin'
 imgUrl: '/assets/images/udstillingerStoreBilleder/1.jpg'
 thumbUrl: '/assets/images/udstillingerThumbs/1_thumb.jpg'
-date: 2000-01-01
+date: 2010-01-01
 tags: "upcomingExhibition"
 eleventyExcludeFromCollections: false
-gallery:
- - {
-   url: '/assets/images/udstillingerStoreBilleder/10.jpg',
-   text: 'This is my image caption. Let me put a really long caption in here to see how it looks, when the line breaks'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/1.jpg',
-   text: 'Hello there'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/2.jpg',
-   text: 'this is the image caption'
- }
-slideshow:
- - '/assets/images/udstillingerStoreBilleder/10.jpg'
- - '/assets/images/udstillingerStoreBilleder/1.jpg'
- - '/assets/images/udstillingerStoreBilleder/2.jpg'
-lightbox:
- - {
-   url: '/assets/images/udstillingerStoreBilleder/10.jpg',
-   text: 'This is my image caption. Let me put a really long caption in here to see how it looks, when the line breaks'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/1.jpg',
-   text: 'Image caption here'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/2.jpg',
-   text: 'this is the image caption'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/4.jpg',
-   text: 'this is the image caption -image number 4!'
- }
- - {
-   url: '/assets/images/udstillingerStoreBilleder/5.jpg',
-   text: 'this is the image caption for the 5th image in this lightbox'
- }
 ---
 
 Lad være med at slette denne udstilling fra "exhibitionCollection"-mappen. Sæt istedet <code>eleventyExcludeFromCollections: false</code> til "true". Så bliver den skjult på websitet, men er stadig tilgængelig i kodebasen.
