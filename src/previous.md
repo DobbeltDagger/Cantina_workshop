@@ -1,7 +1,6 @@
 ---
 layout: "layouts/previousProgram.njk"
 title: "Archive"
-
 ---
 <!-- 
 eleventyNavigation:

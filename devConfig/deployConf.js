@@ -1,14 +1,8 @@
-// FTP hostnavn	linux163.unoeuro.com
-// FTP port	21 (TLS mulig)
-// FTP brugernavn	andersvisti.dk
-// FTP adgangskode	Epx21Itk84
-// Mappe til webfiler	/public_html/cantinatestsite
-
 const deployConf = {
   user: "andersvisti.dk",
   // Password optional, prompted if none given
-  password: "Epx21Itk84", // "pH5fzwDb9AGk",
-  host: "linux163.unoeuro.com",
+  password: "",
+  host: "",
   port: 21,
   localRoot: "", // This is set in eleventy.js conf file // __dirname + "/local-folder",
   remoteRoot: "/public_html/cantinatestsite",

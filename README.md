@@ -1,10 +1,10 @@
 ## Ressource:
-
+### Instruktioner og kommandoer til betjening af CANTINA-sitet
 ---
 
 **Start af node-server, til udvikling**
 
-Start en terminal på din computer. Hvis du ikke står i projektets folder, kan du navigere dertil med <code>ls</code> ("list". Viser filerne i den mappe du står i), og <code>cd</code> ("change directory". Skifter til den mappe du skriver navnet på&mdash;eksempelvis "cd Documents").
+Start en terminal på din computer. På PC skal du starte programmet *Git Bash*, på Mac start programmet *Terminal*. Hvis du ikke står i Cantina-projektets folder, kan du navigere dertil med <code>ls</code> ("list". Viser filerne i den mappe du står i), og <code>cd</code> ("change directory". Skifter til den mappe du skriver navnet på&mdash;eksempelvis "cd Documents").
 
 Når terminalen er i projektets egen mappe, kør følgende kommando for at starte node-serveren.
 
@@ -24,6 +24,15 @@ Denne kommando tager alle filer i _site-mappen og uploader dem til fjernserveren
 
 ---
 
+**Sluk server og terminal**
+
+Når man gerne vil stoppe serveren - eventuelt for at genstarte den - trykker man *CTRL+C*  
+
+Og hvis man derefter vil lukke terminalen, tast <code>exit</code>
+
+
+---
+
 **Øvrige terminal-kommandoer:**
 
 <code>clear</code> (Rydder skærmen i terminalen)  
@@ -33,10 +42,24 @@ Denne kommando tager alle filer i _site-mappen og uploader dem til fjernserveren
 
 ---
 
+## Eleventy Instruktioner
 
+Du skal ALTID arbejde i mappen <code>src</code> -og ALDRIG i mappen <code>_site</code>. Mappen <code>_site</code> indholder den html, der bliver genereret fra <code>src</code>-mappen. ***Der arbejdes derfor altid fra <code>src</code>!***
 
+***Ny side***  
+Hvis du vil oprette en ny side, så brug en af de eksisterende sider som skabelon, eksempelvis <code>index.md</code>  
+Bemærk det øverste indhold på siden: <code>eleventyNavigation</code> beskriver siden som menulink. <code>layout</code> beskriver hvilken layout-skabelon, som siden benytter sig af.  
+***Alle layout-skabeloner ligger under src/includes/layouts -og man kan selv oprette nye efter behov***
 
+***Collections***  
+Cantina-sitet har indtil videre *exhibitionCollection* og *programCollection* som sitets to indholdstyper. Dette indhold vises på siden *Exhibitions* og på sitets forside.
 
+Der ligger en skabelon i hver af disse mapper. Skabelonerne viser hvordan indholdet skal organiseres, for alle typer af indhold: Video, soundcloud, galleri, slideshow og lightbox.
+
+***Skabelonerne kan skjules ved at sætte <code>eleventyExcludeFromCollections:</code> til true. Dermed vises filen ikke på siden, men er stadig tilgængelig i kodebasen***  
+*  
+
+---
 
 
 

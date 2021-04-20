@@ -2,19 +2,26 @@
 
 {% block mainContent %}
 
-  <h2>Resources</h2>
-  <p>A list of resources that are being used, or referenced, frequently in the code&share workshops. Links open in new windows</p>
-  <div class='resourceWrapper'>
-    {% for rs in collections.resourceCollection %}
-      <div class='rs'>
-        <div class='img'><a href='{{ rs.data.url }}' target='{{ rs.data.target }}'><img src='{{ rs.data.thumbUrl }}'></a></div>
-        <div class='info'>
-          <span class='title'>{{ rs.data.name }}</span>
-          {{ rs.data.description }}
-          <span class='link'><a href="{{ rs.data.url }}" target="_blank">{{ rs.data.urlTitle }}</a></span>
-        </div>
+  <div class='inside'>
+
+    <!-- overskrift -->
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <div class="Grid-cell">
+        <h2>Resources</h2>
       </div>
-    {% endfor %}
+    </div>
+
+    <div class="Grid Grid--gutters Grid--full large-Grid--fit">
+      <!-- 1st column -->
+      <div class="Grid-cell">
+        <p>Download manual <a href='/assets/files/ManualPDF.pdf' target='_blank'>here</a></p>
+      </div>
+      <!-- 2nd column -->
+      <div class='Grid-cell'>
+        <p>...</p>
+      </div>
+    </div>    
+
   </div>
 
 {% endblock mainContent %}
