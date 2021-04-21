@@ -1,6 +1,6 @@
-## Ressource:
-### Instruktioner og kommandoer til betjening af CANTINA-sitet
----
+# Ressource:
+
+## Betjening af CANTINA-sitets indhold
 
 **Start af node-server, til udvikling**
 
@@ -30,7 +30,6 @@ Når man gerne vil stoppe serveren - eventuelt for at genstarte den - trykker ma
 
 Og hvis man derefter vil lukke terminalen, tast <code>exit</code>
 
-
 ---
 
 **Øvrige terminal-kommandoer:**
@@ -39,12 +38,19 @@ Og hvis man derefter vil lukke terminalen, tast <code>exit</code>
 <code>node -v</code> (Viser din node-version (og at du har node installeret korrekt))  
 <code>npm -v</code> (Viser din version af *node package manager*)
 
+---
+
+## Placering af indhold
+
+Man placerer *exhibitions* og *programs* ved at sætte deres <code>tags</code>. *Exhibitions* kan være <code>currentExhibition, upcomingExhibition</code> eller <code>previousExhibition</code> &mdash;og dette afgør hvordan udstillinger vises. *Programs* kan enten være <code>currentProgram, upcomingProgram</code> eller <code>previousProgram</code>.
+
+Det er vigtigt altid at sætte disse rigtigt. Når man laver et nyt *program* til forsiden, skal man også huske at sætte det foregående *program* til <code>previousProgram</code>. Det samme gælder for *exhibitions* &mdash;når man opretter en ny *exhibition*, så skriv dette øverst <code>tags: "currentExhibition"</code> &mdash;og sæt den foregående til <code>tags: "previousExhibition"</code>.
 
 ---
 
 ## Eleventy Instruktioner
 
-Du skal ALTID arbejde i mappen <code>src</code> -og ALDRIG i mappen <code>_site</code>. Mappen <code>_site</code> indholder den html, der bliver genereret fra <code>src</code>-mappen. ***Der arbejdes derfor altid fra <code>src</code>!***
+Du skal ALTID arbejde i mappen <code>src</code> -og ALDRIG i mappen <code>_site</code>. Mappen <code>_site</code> indholder den html, der bliver genereret fra <code>src</code>-mappen. ***Der arbejdes derfor altid fra <code>src</code>-mappen!***
 
 ***Ny side***  
 Hvis du vil oprette en ny side, så brug en af de eksisterende sider som skabelon, eksempelvis <code>index.md</code>  
@@ -65,7 +71,7 @@ Der ligger en skabelon i hver af disse mapper. Skabelonerne viser hvordan indhol
 
 ---
 
-## Cantina workshop
+## CANTINA workshop
 
 ### 14.-15. April 2021
 
